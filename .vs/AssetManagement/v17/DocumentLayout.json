@@ -1,0 +1,303 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|d:\\nashtech\\assetmanagementproject\\framework\\automation-testing\\test\\logintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|solutionrelative:test\\logintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|d:\\nashtech\\assetmanagementproject\\framework\\automation-testing\\testdata\\newuser.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|solutionrelative:testdata\\newuser.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|d:\\nashtech\\assetmanagementproject\\framework\\automation-testing\\constant\\fileconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|solutionrelative:constant\\fileconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|d:\\nashtech\\assetmanagementproject\\framework\\automation-testing\\assetmanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|solutionrelative:assetmanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|d:\\nashtech\\assetmanagementproject\\framework\\automation-testing\\test\\hooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|solutionrelative:test\\hooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|d:\\nashtech\\assetmanagementproject\\framework\\automation-testing\\test\\basetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|solutionrelative:test\\basetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|d:\\nashtech\\assetmanagementproject\\framework\\automation-testing\\core\\helper\\jsonhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|solutionrelative:core\\helper\\jsonhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|d:\\nashtech\\assetmanagementproject\\framework\\automation-testing\\extensions\\stringextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|solutionrelative:extensions\\stringextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|d:\\nashtech\\assetmanagementproject\\framework\\automation-testing\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|solutionrelative:models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|d:\\nashtech\\assetmanagementproject\\framework\\automation-testing\\core\\webobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|solutionrelative:core\\webobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|d:\\nashtech\\assetmanagementproject\\framework\\automation-testing\\page\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|solutionrelative:page\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|d:\\nashtech\\assetmanagementproject\\framework\\automation-testing\\page\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|solutionrelative:page\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|d:\\nashtech\\assetmanagementproject\\framework\\automation-testing\\configurations\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|solutionrelative:configurations\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|d:\\nashtech\\assetmanagementproject\\framework\\automation-testing\\core\\helper\\driverhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|solutionrelative:core\\helper\\driverhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|d:\\nashtech\\assetmanagementproject\\framework\\automation-testing\\core\\drivermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|solutionrelative:core\\drivermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|d:\\nashtech\\assetmanagementproject\\framework\\automation-testing\\core\\helper\\configurationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|solutionrelative:core\\helper\\configurationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|d:\\nashtech\\assetmanagementproject\\framework\\automation-testing\\core\\helper\\extentreporthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1AE46B2-8260-43C5-AA1C-14D0A9276EB4}|AssetManagement.csproj|solutionrelative:core\\helper\\extentreporthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseTest.cs",
+              "DocumentMoniker": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Test\\BaseTest.cs",
+              "RelativeDocumentMoniker": "Test\\BaseTest.cs",
+              "ToolTip": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Test\\BaseTest.cs",
+              "RelativeToolTip": "Test\\BaseTest.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAwwCkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T08:48:25.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginTest.cs",
+              "DocumentMoniker": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Test\\LoginTest.cs",
+              "RelativeDocumentMoniker": "Test\\LoginTest.cs",
+              "ToolTip": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Test\\LoginTest.cs",
+              "RelativeToolTip": "Test\\LoginTest.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAQwEIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T09:06:31.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NewUser.json",
+              "DocumentMoniker": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\TestData\\NewUser.json",
+              "RelativeDocumentMoniker": "TestData\\NewUser.json",
+              "ToolTip": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\TestData\\NewUser.json",
+              "RelativeToolTip": "TestData\\NewUser.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-19T09:19:15.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Hooks.cs",
+              "DocumentMoniker": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Test\\Hooks.cs",
+              "RelativeDocumentMoniker": "Test\\Hooks.cs",
+              "ToolTip": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Test\\Hooks.cs",
+              "RelativeToolTip": "Test\\Hooks.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwCcAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T08:49:55.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AssetManagement.csproj",
+              "DocumentMoniker": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\AssetManagement.csproj",
+              "RelativeDocumentMoniker": "AssetManagement.csproj",
+              "ToolTip": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\AssetManagement.csproj",
+              "RelativeToolTip": "AssetManagement.csproj",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-19T08:24:46.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FileConstant.cs",
+              "DocumentMoniker": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Constant\\FileConstant.cs",
+              "RelativeDocumentMoniker": "Constant\\FileConstant.cs",
+              "ToolTip": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Constant\\FileConstant.cs",
+              "RelativeToolTip": "Constant\\FileConstant.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T08:42:10.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JsonHelper.cs",
+              "DocumentMoniker": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Core\\Helper\\JsonHelper.cs",
+              "RelativeDocumentMoniker": "Core\\Helper\\JsonHelper.cs",
+              "ToolTip": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Core\\Helper\\JsonHelper.cs",
+              "RelativeToolTip": "Core\\Helper\\JsonHelper.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T08:30:16.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StringExtensions.cs",
+              "DocumentMoniker": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Extensions\\StringExtensions.cs",
+              "RelativeDocumentMoniker": "Extensions\\StringExtensions.cs",
+              "ToolTip": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Extensions\\StringExtensions.cs",
+              "RelativeToolTip": "Extensions\\StringExtensions.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T03:33:31.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Account.cs",
+              "DocumentMoniker": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Models\\Account.cs",
+              "RelativeDocumentMoniker": "Models\\Account.cs",
+              "ToolTip": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Models\\Account.cs",
+              "RelativeToolTip": "Models\\Account.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T03:37:58.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WebObject.cs",
+              "DocumentMoniker": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Core\\WebObject.cs",
+              "RelativeDocumentMoniker": "Core\\WebObject.cs",
+              "ToolTip": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Core\\WebObject.cs",
+              "RelativeToolTip": "Core\\WebObject.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAnwBwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T08:50:43.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BasePage.cs",
+              "DocumentMoniker": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Page\\BasePage.cs",
+              "RelativeDocumentMoniker": "Page\\BasePage.cs",
+              "ToolTip": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Page\\BasePage.cs",
+              "RelativeToolTip": "Page\\BasePage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T17:01:59.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginPage.cs",
+              "DocumentMoniker": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Page\\LoginPage.cs",
+              "RelativeDocumentMoniker": "Page\\LoginPage.cs",
+              "ToolTip": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Page\\LoginPage.cs",
+              "RelativeToolTip": "Page\\LoginPage.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T09:01:05.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Configurations\\appsettings.json",
+              "RelativeDocumentMoniker": "Configurations\\appsettings.json",
+              "ToolTip": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Configurations\\appsettings.json",
+              "RelativeToolTip": "Configurations\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-19T09:00:22.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DriverHelper.cs",
+              "DocumentMoniker": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Core\\Helper\\DriverHelper.cs",
+              "RelativeDocumentMoniker": "Core\\Helper\\DriverHelper.cs",
+              "ToolTip": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Core\\Helper\\DriverHelper.cs",
+              "RelativeToolTip": "Core\\Helper\\DriverHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T08:31:11.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DriverManager.cs",
+              "DocumentMoniker": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Core\\DriverManager.cs",
+              "RelativeDocumentMoniker": "Core\\DriverManager.cs",
+              "ToolTip": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Core\\DriverManager.cs",
+              "RelativeToolTip": "Core\\DriverManager.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAUwA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T08:40:36.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ConfigurationHelper.cs",
+              "DocumentMoniker": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Core\\Helper\\ConfigurationHelper.cs",
+              "RelativeDocumentMoniker": "Core\\Helper\\ConfigurationHelper.cs",
+              "ToolTip": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Core\\Helper\\ConfigurationHelper.cs",
+              "RelativeToolTip": "Core\\Helper\\ConfigurationHelper.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAYwBIAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T08:28:02.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ExtentReportHelper.cs",
+              "DocumentMoniker": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Core\\Helper\\ExtentReportHelper.cs",
+              "RelativeDocumentMoniker": "Core\\Helper\\ExtentReportHelper.cs",
+              "ToolTip": "D:\\NashTech\\AssetManagementProject\\FrameWork\\automation-testing\\Core\\Helper\\ExtentReportHelper.cs",
+              "RelativeToolTip": "Core\\Helper\\ExtentReportHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T08:29:21.296Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

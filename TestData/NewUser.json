@@ -1,0 +1,19 @@
+{
+  "valid_account": {
+    "username": "datlt1",
+    "password": "datlt1@19062002"
+  },
+  "invalid_account1": {
+    "username": "datlt",
+    "password": ""
+  },
+  "invalid_account2": {
+    "username": "",
+    "password": "Datlt@19062000"
+  },
+  "invalid_account3": {
+    "username": "asdsadsads",
+    "password": "Datlt@19062000"
+  }
+
+}
