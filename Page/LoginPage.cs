@@ -1,5 +1,5 @@
 ﻿
-using AssetManagement.Constant; 
+using AssetManagement.Constant;
 using AssetManagement.Core;
 using OpenQA.Selenium;
 
@@ -12,7 +12,7 @@ namespace AssetManagement.Page
         private WebObject _txtPassword = new WebObject(By.XPath("//input[@name='password']"));
         private WebObject _btnLogin = new WebObject(By.XPath("//button[text()='Login']"));
         private WebObject _msgIncorrectMessage = new WebObject(By.XPath("//div[@class='relative']/following-sibling::p"));
-        
+        private WebObject _titleLogin = new WebObject(By.CssSelector("h3"));
 
 
         public void Login(string username, string password)
@@ -20,12 +20,16 @@ namespace AssetManagement.Page
             _txtUserName.EnterText(username);
             _txtPassword.EnterText(password);
         }
-    
+
         public string getIncorrecUsernamePasswordMessage()
         {
             return _msgIncorrectMessage.GetTextFromElement();
         }
 
+        public string getTitleText()
+        {
+            return _titleLogin.GetTextFromElement();
+        }
 
         public bool IsLoginButtonEnabled()
         {

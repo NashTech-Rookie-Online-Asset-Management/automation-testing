@@ -3,6 +3,10 @@
     "username": "datlt1",
     "password": "datlt1@19062002"
   },
+  "valid_account1": {
+    "username": "datlt",
+    "password": "Datlt@19062000"
+  },
   "invalid_account1": {
     "username": "datlt",
     "password": ""

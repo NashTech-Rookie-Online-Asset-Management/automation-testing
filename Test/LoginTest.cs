@@ -77,7 +77,7 @@ namespace AssetManagement.Test
             _loginPage.ClickLoginButton();
             
             ExtentReportHelper.LogTestStep("Verify login unsuccessfully");
-            Assert.That(_loginPage.getIncorrecUsernamePasswordMessage(), Is.EqualTo("Username or password is incorrect. Please try again"));
+            Assert.That(_loginPage.getIncorrecUsernamePasswordMessage(), Is.EqualTo("Username or Password is incorrect. Please try again"));
         }
     }
 }
