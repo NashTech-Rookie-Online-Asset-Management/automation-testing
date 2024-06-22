@@ -12,8 +12,8 @@ namespace AssetManagement.Page
         private WebObject _txtPassword = new WebObject(By.XPath("//input[@name='password']"));
         private WebObject _btnLogin = new WebObject(By.XPath("//button[text()='Login']"));
         private WebObject _msgIncorrectMessage = new WebObject(By.XPath("//div[@class='relative']/following-sibling::p"));
+        private WebObject _titleHomePage = new WebObject(By.XPath("//h1[text()='Home']"));
         private WebObject _titleLogin = new WebObject(By.CssSelector("h3"));
-
 
         public void Login(string username, string password)
         {

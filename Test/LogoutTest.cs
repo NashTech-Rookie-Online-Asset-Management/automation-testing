@@ -27,7 +27,7 @@ namespace AssetManagement.Test
             _basePage = new BasePage();
         }
 
-        [Test, Description("Log in with valid account")]
+        [Test, Description("Logout successfully flow")]
         [TestCase("valid_account1")]
         public void TC_LogouSucceced(string accountKey)
         {
