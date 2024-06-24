@@ -1,0 +1,9 @@
+{
+  "create_asset": {
+    "Name": "Personal Computer",
+    "Category": "Personal Computer",
+    "Specification": "Hi-end 84.990K: I9-13900K, RTX 4090, Z790, 32G",
+    "InstalledDate": "06022024",
+    "State": "unavailable"
+  }          
+}

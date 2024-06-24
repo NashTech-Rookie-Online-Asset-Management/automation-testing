@@ -12,11 +12,15 @@ namespace AssetManagement.Test
         public class BaseTest
         {
             protected Dictionary<string, Account> AccountData;
+            protected Dictionary<string, Asset> AssetData;
 
             [SetUp]
             public void SetUp()
             {
+                
                 AccountData = JsonHelper.ReadAndParse<Dictionary<string, Account>>(FileConstant.AccountFilePath.GetAbsolutePath());
+                AssetData = JsonHelper.ReadAndParse<Dictionary<string, Asset>>(FileConstant.AssetFilePath.GetAbsolutePath());
+               
                 string browser = ConfigurationHelper.GetConfigurationByKey(Hooks.Config, "browser");
 
                 ExtentReportHelper.CreateTest(TestContext.CurrentContext.Test.ClassName);
@@ -48,34 +52,6 @@ namespace AssetManagement.Test
 
 
 
-
-    //string enviroment = ConfigurationHelper.GetConfigurationByKey(Hooks.Config, "enviroment");
-    //string functionName = TestContext.CurrentContext.Test.MethodName;
-
-    ////Create folder "TestResults"
-    //string projectDirectory = Directory.GetCurrentDirectory();
-    //string testResultsDirectory = Path.Combine(projectDirectory, "TestResults");
-    //Directory.CreateDirectory(testResultsDirectory);
-
-    ////Create subfolder by Test Class's name
-    //string testClassName = TestContext.CurrentContext.Test.ClassName;
-    //string classNameWithoutNamespace = testClassName.Substring(testClassName.LastIndexOf('.') + 1);
-
-    //string classTestDirectory = Path.Combine(testResultsDirectory, classNameWithoutNamespace);
-    //Directory.CreateDirectory(classTestDirectory);
-
-    ////Create subfolder by Test Case's name
-    //string functionTestDirectory = Path.Combine(classTestDirectory, $"Result_{date}_{functionName}");
-    //Directory.CreateDirectory(functionTestDirectory);
-
-
-    //string reportPath = Path.Combine(functionTestDirectory, "result.html");
-
-
-    //ExtentReportHelper.InitializeReport(reportPath, "DemoQA", enviroment, browser);
-    //ExtentReportHelper.CreateTest(TestContext.CurrentContext.Test.ClassName);
-    //ExtentReportHelper.CreateNode(TestContext.CurrentContext.Test.Name);
-    //ExtentReportHelper.LogTestStep("Initialize webdriver");
 
 
 
