@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace AssetManagement.Page
 {
-    public class ManageAssignment
+    public class ManageAssignment : BasePage
     {
         private WebObject _txtSearchUser = new WebObject(By.XPath("//input[@name='staffCode']"));
         private WebObject _txtSearchAsset = new WebObject(By.XPath("//input[@name='assetCode']"));

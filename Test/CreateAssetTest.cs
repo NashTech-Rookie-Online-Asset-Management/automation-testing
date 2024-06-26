@@ -22,7 +22,12 @@ namespace AssetManagement.Test
 
 
         [Test, Description("Create Asset ")]
-        [TestCase("valid_account1", "create_asset")]
+        [TestCase("admin_account", "create_asset2")]
+        [TestCase("admin_account", "create_asset3")]
+        [TestCase("admin_account", "create_asset4")]
+        [TestCase("admin_account", "create_asset5")]
+        [TestCase("admin_account", "create_asset6")]
+        [TestCase("admin_account", "create_asset7")]
 
         //[TestCase("valid_account1")]
 

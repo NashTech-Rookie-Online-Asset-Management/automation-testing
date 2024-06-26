@@ -18,6 +18,10 @@
   "invalid_account3": {
     "username": "asdsadsads",
     "password": "Datlt@19062000"
+  },
+  "admin_account": {
+    "username": "admin1",
+    "password": "Admin1@01012001"
   }
 
 }

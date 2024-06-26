@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace AssetManagement.Page
 {
-    public class ManageAssetPage
+    public class ManageAssetPage : BasePage
     {
         private WebObject _txtName = new WebObject(By.XPath("//input[@name='name']"));
         private WebObject _ddlCategory = new WebObject(By.Id("open_category_list_btn"));

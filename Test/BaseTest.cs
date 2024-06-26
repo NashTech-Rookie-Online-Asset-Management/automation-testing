@@ -13,14 +13,19 @@ namespace AssetManagement.Test
         {
             protected Dictionary<string, Account> AccountData;
             protected Dictionary<string, Asset> AssetData;
+            protected Dictionary<string, User> UserData;
+
 
             [SetUp]
             public void SetUp()
             {
-                
+
                 AccountData = JsonHelper.ReadAndParse<Dictionary<string, Account>>(FileConstant.AccountFilePath.GetAbsolutePath());
                 AssetData = JsonHelper.ReadAndParse<Dictionary<string, Asset>>(FileConstant.AssetFilePath.GetAbsolutePath());
-               
+                UserData = JsonHelper.ReadAndParse<Dictionary<string, User>>(FileConstant.UserFilePath.GetAbsolutePath());
+
+                
+                
                 string browser = ConfigurationHelper.GetConfigurationByKey(Hooks.Config, "browser");
 
                 ExtentReportHelper.CreateTest(TestContext.CurrentContext.Test.ClassName);
