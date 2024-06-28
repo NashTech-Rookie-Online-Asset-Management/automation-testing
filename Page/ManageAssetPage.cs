@@ -1,6 +1,8 @@
 ﻿using AngleSharp.Dom;
 using AssetManagement.Core;
-using AssetManagement.Models;
+using AssetManagement.Core.Helper;
+using AssetManagement.Models.Create;
+using AssetManagement.Models.Edit;
 using AventStack.ExtentReports.Model;
 using OpenQA.Selenium;
 using System;
@@ -13,56 +15,62 @@ namespace AssetManagement.Page
 {
     public class ManageAssetPage : BasePage
     {
-        private WebObject _txtName = new WebObject(By.XPath("//input[@name='name']"));
-        private WebObject _ddlCategory = new WebObject(By.Id("open_category_list_btn"));
-        private WebObject _txaSpecification = new WebObject(By.XPath("//textarea[@name='specification']"));
-        private WebObject _dtpInstallDate = new WebObject(By.XPath("//input[@name='installedDate']"));
-        private WebObject _btnState = new WebObject(By.XPath("//button[@value='AVAILABLE']"));
-        private WebObject _btnSave = new WebObject(By.XPath("//button[text()='Save']"));
-        private WebObject _btnCancel = new WebObject(By.XPath("//a[text()='Cancel']"));
+        private WebObject _rowVerifyAsset = new WebObject(By.CssSelector("tbody>tr:first-child"));
+        private WebObject _txtSearchAsset = new WebObject(By.XPath("//input[@placeholder='Search by name, asset code']"));
+        private WebObject _svgOpenMenu = new WebObject(By.XPath("//span[text()='Open menu']/parent::button"));
+        private WebObject _svgEdit = new WebObject(By.XPath("//a[@role='menuitem']"));
+        private WebObject _firstrowAssetCodeEdit = new WebObject(By.CssSelector("tbody>tr:first-child>td:first-child"));
+        private WebObject _msgEditSuccessfully = new WebObject(By.XPath("//div[text()='Successfully edited asset KB000001']"));
+
+
+        private WebObject msgEditSuccessfully(string assetCode) { return new WebObject(By.XPath($"//div[text()='Successfully edited asset {assetCode}']")); }
+
         
-        
-        private WebObject _btnCreateAsset = new WebObject(By.XPath("//a[text()='Create new asset']"));
-
-
-        private WebObject Category(string category) { return new WebObject(By.XPath($"//span[text()='{category}']")); }
-        private WebObject State(string state) { return new WebObject(By.XPath($"//button[@value='{state.ToUpper()}']")); }
-
-
-        public void CreateAsset(Asset assetData)
+        public string GetAssetDetail(string label)
         {
-            _btnCreateAsset.ClickOnElement();
-            EnterName(assetData.Name);
-            SelectCatergory(assetData.Category);
-            EnterSpecification(assetData.Specification);
-            SelectInstallDated(assetData.InstalledDate);
-            SelectState(assetData.State);
-            _btnCancel.ClickOnElement();
-
+            WebObject detailElement = new WebObject(By.XPath($"//p[text()='{label}']/following-sibling::p"));
+            return detailElement.GetTextFromElement();
         }
 
-        public void EnterName(string name)
+        public void GoToEditAssetPage(AssetEdit assetData)
         {
-            _txtName.EnterText(name);
+            _txtSearchAsset.EnterText(assetData.assetCode);
+            Thread.Sleep(3000);
+            _svgOpenMenu.ClickOnElement();
+            _svgEdit.ClickOnElement();
+            Thread.Sleep(3000);
+
+        }
+        public void AssertAssetCreateDetails(AssetCreate expectedAsset)
+        {
+            _rowVerifyAsset.ClickOnElement();
+
+
+            Assert.AreEqual(expectedAsset.Name, GetAssetDetail("Asset Name"), "Asset Name does not match.");
+            Assert.AreEqual(expectedAsset.Category, GetAssetDetail("Category"), "Category does not match.");
+            Assert.AreEqual(StringHelper.FormatDate(expectedAsset.InstalledDate), GetAssetDetail("Installed Date"), "Installed date does not match.");
+            Assert.AreEqual(expectedAsset.State, GetAssetDetail("State"), "State does not match.");
+            Assert.AreEqual(expectedAsset.Specification, GetAssetDetail("Specification"), "Specification does not match.");
         }
 
-        public void SelectCatergory(string catergory)
+
+        public void AssertAssetEditDetails(AssetEdit expectedAsset)
         {
-            _ddlCategory.ClickOnElement();
-            Category(catergory).ClickOnElement();
-        }
-        public void EnterSpecification(string specification)
-        {
-            _txaSpecification.EnterText(specification);
-        }
-        public void SelectInstallDated(string installDated)
-        {
-            _dtpInstallDate.EnterText(installDated);
-        }
-        public void SelectState(string state)
-        {
-            State(state).ClickOnElement();
-            //IWebElement elem = DriverCommand.FindElements(By.CssSelector("tr td").[0]
+            _rowVerifyAsset.ClickOnElement();
+            
+            // Assert Popup message Edit Successfully
+            WebObject successMessage = msgEditSuccessfully(expectedAsset.assetCode);
+            Assert.IsTrue(successMessage.IsElementDisplayed(), "The success message was not displayed.");
+
+            string expectedMessage = $"Successfully edited asset {expectedAsset.assetCode}";
+            Assert.AreEqual(expectedMessage, successMessage.GetTextFromElement(), "The success message text was not correct.");
+            Thread.Sleep(3000);
+            // Assert Detail Diaglog Infomation 
+            Assert.AreEqual(expectedAsset.assetCode, GetAssetDetail("Asset Code"), "Asset Code does not match.");
+            Assert.AreEqual(expectedAsset.Name, GetAssetDetail("Asset Name"), "Asset Name does not match.");
+            Assert.AreEqual(StringHelper.FormatDate(expectedAsset.InstalledDate), GetAssetDetail("Installed Date"), "Joined date does not match.");
+            Assert.AreEqual(expectedAsset.State, GetAssetDetail("State"), "State does not match.");
+            Assert.AreEqual(expectedAsset.Specification, GetAssetDetail("Specification"), "Specification does not match.");
         }
 
     }

@@ -14,11 +14,18 @@ namespace AssetManagement.Page
         private WebObject _msgIncorrectMessage = new WebObject(By.XPath("//div[@class='relative']/following-sibling::p"));
         private WebObject _titleHomePage = new WebObject(By.XPath("//h1[text()='Home']"));
         private WebObject _titleLogin = new WebObject(By.CssSelector("h3"));
-
+        private WebObject _txtChangePasswordFirstTime = new WebObject(By.XPath("//input[@name='newPassword']"));
         public void Login(string username, string password)
         {
             _txtUserName.EnterText(username);
             _txtPassword.EnterText(password);
+        }
+
+        public void LoginFirstTime(string username, string password, string changePassWord)
+        {
+            _txtUserName.EnterText(username);
+            _txtPassword.EnterText(password);
+            _txtChangePasswordFirstTime.EnterText(changePassWord);  
         }
 
         public string getIncorrecUsernamePasswordMessage()

@@ -40,6 +40,9 @@
     <None Update="TestData\AssignmentInfor.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="TestData\EditAssetInfor.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="TestData\LoginAccount.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

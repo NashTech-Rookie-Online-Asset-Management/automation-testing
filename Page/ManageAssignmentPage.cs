@@ -1,5 +1,5 @@
 ﻿using AssetManagement.Core;
-using AssetManagement.Models;
+using AssetManagement.Models.Edit;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
@@ -27,18 +27,18 @@ namespace AssetManagement.Page
         private WebObject _dtpAssignDate = new WebObject(By.XPath("//input[@name='installedDate']"));
         private WebObject _txaNote = new WebObject(By.XPath("//textarea[@name='note']"));
 
-        public void SearchUser(Assignment assignment)
-        {
-            _txtFindUser.EnterText(assignment.StaffCode);
-            _btnSaveSelecUser.ClickOnElement();
-        }
+        //public void SearchUser(AssetEdit assignment)
+        //{
+        //    _txtFindUser.EnterText(assignment.StaffCode);
+        //    _btnSaveSelecUser.ClickOnElement();
+        //}
 
-        public void SearchAsset(Assignment assignment)
-        {
-            _txtFindAsset.EnterText(assignment.AssetCode);
-            _btnSaveSelecAsset.ClickOnElement();
+        //public void SearchAsset(AssetEdit assignment)
+        //{
+        //    _txtFindAsset.EnterText(assignment.AssetCode);
+        //    _btnSaveSelecAsset.ClickOnElement();
 
-        }
+        //}
         public void AssignedDate(string date)
         {
             _dtpAssignDate.EnterText(date);

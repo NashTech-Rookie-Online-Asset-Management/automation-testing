@@ -3,6 +3,8 @@ using AssetManagement.Core;
 using AssetManagement.Core.Helper;
 using AssetManagement.Extensions;
 using AssetManagement.Models;
+using AssetManagement.Models.Create;
+using AssetManagement.Models.Edit;
 
 namespace AssetManagement.Test
 {
@@ -12,8 +14,10 @@ namespace AssetManagement.Test
         public class BaseTest
         {
             protected Dictionary<string, Account> AccountData;
-            protected Dictionary<string, Asset> AssetData;
-            protected Dictionary<string, User> UserData;
+            protected Dictionary<string, AssetCreate> AssetCreateData;
+            protected Dictionary<string, UserCreate> UserCreateData;
+            protected Dictionary<string, AssetEdit> AssetEditData;
+
 
 
             [SetUp]
@@ -21,11 +25,13 @@ namespace AssetManagement.Test
             {
 
                 AccountData = JsonHelper.ReadAndParse<Dictionary<string, Account>>(FileConstant.AccountFilePath.GetAbsolutePath());
-                AssetData = JsonHelper.ReadAndParse<Dictionary<string, Asset>>(FileConstant.AssetFilePath.GetAbsolutePath());
-                UserData = JsonHelper.ReadAndParse<Dictionary<string, User>>(FileConstant.UserFilePath.GetAbsolutePath());
+                AssetCreateData = JsonHelper.ReadAndParse<Dictionary<string, AssetCreate>>(FileConstant.AssetFilePath.GetAbsolutePath());
+                UserCreateData = JsonHelper.ReadAndParse<Dictionary<string, UserCreate>>(FileConstant.UserFilePath.GetAbsolutePath());
+                AssetEditData = JsonHelper.ReadAndParse<Dictionary<string, AssetEdit>>(FileConstant.AssetEditFilePath.GetAbsolutePath());
 
-                
-                
+
+
+
                 string browser = ConfigurationHelper.GetConfigurationByKey(Hooks.Config, "browser");
 
                 ExtentReportHelper.CreateTest(TestContext.CurrentContext.Test.ClassName);

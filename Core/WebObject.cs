@@ -1,6 +1,8 @@
 ﻿using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium;
 using SeleniumExtras.WaitHelpers;
+using OpenQA.Selenium.Interactions;
+using AventStack.ExtentReports.Utils;
 
 namespace AssetManagement.Core
 {
@@ -122,6 +124,33 @@ namespace AssetManagement.Core
             js.ExecuteScript("arguments[0].scrollIntoView(true);", webElement);
         }
 
+        public void EnterValue(string value)
+        {
+            IWebElement elementDatePicker = WaitForElementToBeVisible();
+            elementDatePicker.SendKeys(Keys.Control + "a");
+            elementDatePicker.SendKeys(value);
+        }
+
+        public IList<IWebElement> FindAllElements()
+        {
+            return DriverManager.driver.FindElements(By);
+        }
+        public bool CheckElementExistWithoutWait()
+        {
+            return (!FindAllElements().IsNullOrEmpty());
+        }
+        public void ClearTextUsingKeys()
+        {
+            IWebElement element = WaitForElementToBeVisible();
+            ScrollToElement();
+            Actions actions = new Actions(DriverManager.driver);
+            actions.Click(element)
+                   .KeyDown(Keys.Control)
+                   .SendKeys("a")
+                   .KeyUp(Keys.Control)
+                   .SendKeys(Keys.Delete)
+                   .Perform();
+        }
 
     }
 }

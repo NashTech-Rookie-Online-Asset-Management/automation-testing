@@ -41,12 +41,30 @@ namespace AssetManagement.Test
 
         }
 
+        [Test, Description("Log in with valid account and changepassword first time")]
+        [TestCase("valid_account_firsttime")]
+        public void TC2_LoginSucceced(string accountKey)
+        {
+            Account account = AccountData[accountKey];
+
+            ExtentReportHelper.LogTestStep("Go to Login page");
+            DriverHelper.NavigateTo(login_url);
+
+            ExtentReportHelper.LogTestStep("Enter valid account");
+            _loginPage.LoginFirstTime(account.username, account.password, account.changePassword);
+            _loginPage.ClickLoginButton();
+
+            ExtentReportHelper.LogTestStep("Verify login successfully");
+            Assert.That(_basePage.CheckLoggedInAsStaff, Is.True);
+
+        }
+
 
         [Test, Description("Log in with missing fields")]
         [TestCase("invalid_account1")]
         [TestCase("invalid_account2")]
 
-        public void TC2_LoginFailed(string accountKey)
+        public void TC3_LoginFailed(string accountKey)
 
         {
             Account account = AccountData[accountKey];
@@ -65,7 +83,7 @@ namespace AssetManagement.Test
 
         [Test, Description("Log in with invalid account")]
         [TestCase("invalid_account3")]
-        public void TC3_LoginFailed(string accountKey)
+        public void TC4_LoginFailed(string accountKey)
         {
             Account account = AccountData[accountKey];
 

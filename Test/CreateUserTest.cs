@@ -1,5 +1,6 @@
 ﻿using AssetManagement.Core.Helper;
 using AssetManagement.Models;
+using AssetManagement.Models.Create;
 using AssetManagement.Page;
 using AssetManagement.Test.AssetManagement.Core.Test;
 using System;
@@ -38,7 +39,7 @@ namespace AssetManagement.Test
         public void TC1_CreateUserSuccessfully(string accountKey, string userKey)
         {
             Account account = AccountData[accountKey];
-            User user = UserData[userKey];
+            UserCreate user = UserCreateData[userKey];
 
             ExtentReportHelper.LogTestStep("Go to Login page");
             DriverHelper.NavigateTo(login_url);

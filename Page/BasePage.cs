@@ -81,7 +81,15 @@ namespace AssetManagement.Page
             _tabReport.ClickOnElement();
         }
 
-      
+        public bool CheckLoggedInAsStaff()
+        {
+            _tabButton("Home").WaitForElementToBeVisible();
+            return (!_tabButton("Manage User").CheckElementExistWithoutWait() &&
+                    !_tabButton("Manage Asset").CheckElementExistWithoutWait() &&
+                    !_tabButton("Manage Assignment").CheckElementExistWithoutWait() &&
+                    !_tabButton("Request For Return").CheckElementExistWithoutWait() &&
+                    !_tabButton("Report").CheckElementExistWithoutWait());
+        }
 
     }
 }

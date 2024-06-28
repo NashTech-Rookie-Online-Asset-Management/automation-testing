@@ -22,6 +22,10 @@
   "admin_account": {
     "username": "admin1",
     "password": "Admin1@01012001"
+  },
+  "valid_account_firsttime": {
+    "username": "caot2",
+    "password": "caot2@01121998",
+    "changePassWord": "Caot2@01121998"
   }
-
 }

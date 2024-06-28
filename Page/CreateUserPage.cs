@@ -1,5 +1,5 @@
 ﻿using AssetManagement.Core;
-using AssetManagement.Models;
+using AssetManagement.Models.Create;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
@@ -24,7 +24,7 @@ namespace AssetManagement.Page
         private WebObject _dtpJoinedDate = new WebObject(By.XPath("//input[@name='joinedAt']"));
 
 
-        private WebObject _btnSave = new WebObject(By.XPath("//button[@data-id='save-button']"));
+        private WebObject _btnSave = new WebObject(By.XPath("//button[@type='submit']"));
         private WebObject _btnCancel = new WebObject(By.XPath("//button[text()='Cancel']"));
 
         private WebObject _btnConfirm = new WebObject(By.XPath("//button[text()='Confirm']"));
@@ -69,7 +69,7 @@ namespace AssetManagement.Page
             _bthCreateUser.ClickOnElement();
         }
 
-        public void CreateUser(User staffUser)
+        public void CreateUser(UserCreate staffUser)
         {
             GoToCreateUserPage();
             EnterFirstName(staffUser.firstName);

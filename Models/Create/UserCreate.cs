@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AssetManagement.Models
+namespace AssetManagement.Models.Create
 {
-    public class User
+    public class UserCreate
     {
         public string firstName { get; set; }
         public string lastName { get; set; }
