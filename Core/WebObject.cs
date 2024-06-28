@@ -75,7 +75,7 @@ namespace AssetManagement.Core
 
         public void ClickOnElement()
         {
-            IWebElement element = WaitForElementToBeClickEnable();
+            IWebElement element = WaitForElementToBeVisible();
             ScrollToElement();
             element.Click();
         }

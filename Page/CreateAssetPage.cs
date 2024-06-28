@@ -35,7 +35,7 @@ namespace AssetManagement.Page
             SelectInstallDated(assetData.InstalledDate);
             SelectState(assetData.State);
             _btnSave.ClickOnElement();
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
 
         }
 

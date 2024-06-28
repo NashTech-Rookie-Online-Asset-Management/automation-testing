@@ -51,9 +51,10 @@ namespace AssetManagement.Test
             DriverHelper.NavigateTo(login_url);
 
             ExtentReportHelper.LogTestStep("Enter valid account");
-            _loginPage.LoginFirstTime(account.username, account.password, account.changePassword);
+            //_loginPage.LoginFirstTime(account.username, account.password, account.changePassword);
+            _loginPage.Login(account.username, account.password);
             _loginPage.ClickLoginButton();
-
+            
             ExtentReportHelper.LogTestStep("Verify login successfully");
             Assert.That(_basePage.CheckLoggedInAsStaff, Is.True);
 

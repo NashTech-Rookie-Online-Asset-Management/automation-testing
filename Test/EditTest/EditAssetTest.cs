@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AssetManagement.Test
+namespace AssetManagement.Test.EditTest
 {
     public class EditAssetTest : BaseTest
     {
@@ -23,10 +23,10 @@ namespace AssetManagement.Test
         [SetUp]
         public void PageSetUp()
         {
-            _loginPage = new LoginPage();   
+            _loginPage = new LoginPage();
             _basePage = new BasePage();
             _manageAssetPage = new ManageAssetPage();
-            _editAssetPage = new EditAssetPage();   
+            _editAssetPage = new EditAssetPage();
         }
 
 
@@ -34,7 +34,7 @@ namespace AssetManagement.Test
         [TestCase("admin_account", "edit_assetcode")]
         public void TC1_EditAssetSuccessfully(string accountKey, string assetKey)
         {
-            Account account = AccountData[accountKey];        
+            Account account = AccountData[accountKey];
             AssetEdit assetEdit = AssetEditData[assetKey];
 
             ExtentReportHelper.LogTestStep("Go to Login page");

@@ -15,6 +15,8 @@ namespace AssetManagement.Page
         private WebObject _titleHomePage = new WebObject(By.XPath("//h1[text()='Home']"));
         private WebObject _titleLogin = new WebObject(By.CssSelector("h3"));
         private WebObject _txtChangePasswordFirstTime = new WebObject(By.XPath("//input[@name='newPassword']"));
+        private WebObject _btnSave = new WebObject(By.XPath("//button[text()='Save']"));
+        private WebObject _btnClose = new WebObject(By.XPath("//button[text()='Close']"));
         public void Login(string username, string password)
         {
             _txtUserName.EnterText(username);
@@ -25,7 +27,11 @@ namespace AssetManagement.Page
         {
             _txtUserName.EnterText(username);
             _txtPassword.EnterText(password);
+            _btnLogin.ClickOnElement();
             _txtChangePasswordFirstTime.EnterText(changePassWord);  
+            _btnSave.ClickOnElement();  
+            _btnClose.ClickOnElement();
+
         }
 
         public string getIncorrecUsernamePasswordMessage()

@@ -2,6 +2,8 @@
 using AngleSharp.Dom;
 using AssetManagement.Core;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
 
 
 namespace AssetManagement.Page
@@ -9,13 +11,13 @@ namespace AssetManagement.Page
     public class BasePage
     {
         private WebObject _txtHeader = new WebObject(By.XPath("//h4[text()='Online Asset Management']"));
-        private WebObject _mnuUserMenu = new WebObject(By.Id("radix-:R6av5ja:"));
+        private WebObject _mnuUserMenu = new WebObject(By.XPath("//button[@data-id='header-dropdown']"));
         private WebObject _btnLogoutMenu = new WebObject(By.XPath("//span[text()='Logout']"));
         private WebObject _btnLogoutConfirm = new WebObject(By.XPath("//span[text()='Log out']"));
         private WebObject _btnChangepasswordMenu = new WebObject(By.XPath("//span[text()='Change password']"));
 
         private WebObject _tabHome = new WebObject(By.XPath("//li[text()='Home']"));
-        private WebObject _tabManageUser = new WebObject(By.XPath("//li[text()='Manage User']"));
+        private WebObject _tabManageUser = new WebObject(By.XPath("//a[@data-id='side-bar-manage-user']"));
         private WebObject _tabManageAsset = new WebObject(By.XPath("//li[text()='Manage Asset']"));
         private WebObject _tabManageAssignment = new WebObject(By.XPath("//li[text()='Manage Assignment']"));
         private WebObject _tabRequestForReturn = new WebObject(By.XPath("//li[text()='Request for Returning']"));
@@ -24,7 +26,7 @@ namespace AssetManagement.Page
         private WebObject _tabButton(string tabName) { return new WebObject(By.XPath($"//li[text()='{tabName}']")); }
 
         private WebObject _lblChangePassword = new WebObject(By.XPath("//h2[text()='Change Password']"));
-
+        private WebObject _lblFirstChangePassword = new WebObject(By.XPath("//div[@class='pb-4']"));
 
         public void GoToLogout()
         {
@@ -45,6 +47,8 @@ namespace AssetManagement.Page
             return _lblChangePassword.GetTextFromElement();
         }
 
+
+
         public void Logout()
         {
             GoToLogout();
@@ -58,7 +62,9 @@ namespace AssetManagement.Page
 
         public void GoToManageUserPage()
         {
+       
             _tabManageUser.ClickOnElement();
+
         }
 
         public void GoToManageAssetPage()
