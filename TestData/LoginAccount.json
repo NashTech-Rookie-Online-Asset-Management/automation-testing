@@ -1,0 +1,34 @@
+{
+  "valid_account": {
+    "username": "caom",
+    "password": "caom@12052002"
+  },
+  "valid_account1": {
+    "username": "huynhc",
+    "password": "Huynhc@12062001"
+  },
+  "invalid_account1": {
+    "username": "datlt",
+    "password": ""
+  },
+  "invalid_account2": {
+    "username": "",
+    "password": "Datlt@19062000"
+  },
+  "invalid_account3": {
+    "username": "asdsadsads",
+    "password": "Datlt@19062000"
+  },
+  "admin_account": {
+    "username": "admins",
+    "password": "Admins@12051999"
+  },
+  "valid_account_firsttime": {
+    "username": "huynhc",
+    "password": "Huynhc@12062001"
+  },
+  "admin_account2": {
+    "username": "binhnv",
+    "password": "P@ssw0rd"
+  }
+}

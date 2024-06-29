@@ -1,0 +1,72 @@
+{
+  "create_asset1": {
+    "Name": "Personal Computer",
+    "Category": "Personal Computer",
+    "Specification": "Hi-end 84.990K: I9-13900K, RTX 4090, Z790, 32G",
+    "InstalledDate": "06022024",
+    "State": "Not Available"
+  },
+  "create_asset2": {
+    "Name": "Laptop HP",
+    "Category": "Laptop",
+    "Specification": "HP Spectre x360: i7-1165G7, 16GB RAM, 512GB SSD",
+    "InstalledDate": "06242024",
+    "State": "Available"
+  },
+  "create_asset3": {
+    "Name": "Laptop Dell",
+    "Category": "Laptop",
+    "Specification": "Dell XPS 13: i7-1185G7, 16GB RAM, 1TB SSD",
+    "InstalledDate": "05152024",
+    "State": "Not Available"
+  },
+  "create_asset4": {
+    "Name": "Laptop Mac",
+    "Category": "Laptop",
+    "Specification": "MacBook Pro: M1, 16GB RAM, 512GB SSD",
+    "InstalledDate": "04012024",
+    "State": "Available"
+  },
+  "create_asset5": {
+    "Name": "Mouse",
+    "Category": "Mouse",
+    "Specification": "Logitech MX Master 3: Wireless, 4000 DPI",
+    "InstalledDate": "03182024",
+    "State": "Available"
+  },
+  "create_asset6": {
+    "Name": "Keyboard",
+    "Category": "Keyboard",
+    "Specification": "Corsair K95 RGB: Mechanical, Cherry MX Speed",
+    "InstalledDate": "02092024",
+    "State": "Not Available"
+  },
+  "create_asset7": {
+    "Name": "Bluetooth Mouse",
+    "Category": "Bluetooth Mouse",
+    "Specification": "Apple Magic Mouse: Multi-Touch, Bluetooth",
+    "InstalledDate": "01222024",
+    "State": "Available"
+  },
+  "create_asset8": {
+    "Name": "Personal Computer",
+    "Category": "Personal Computer",
+    "Specification": "Mid-range 55.000K: I5-12600K, RTX 3060, B660, 16G",
+    "InstalledDate": "12292023",
+    "State": "Not Available"
+  },
+  "create_asset9": {
+    "Name": "Laptop Lenovo",
+    "Category": "Laptop",
+    "Specification": "Lenovo ThinkPad X1 Carbon: i7-1165G7, 16GB RAM, 512GB SSD",
+    "InstalledDate": "11302023",
+    "State": "Available"
+  },
+  "create_asset10": {
+    "Name": "Keyboard",
+    "Category": "Keyboard",
+    "Specification": "Razer BlackWidow: Mechanical, Green Switches",
+    "InstalledDate": "10152023",
+    "State": "Not Available"
+  }
+}
