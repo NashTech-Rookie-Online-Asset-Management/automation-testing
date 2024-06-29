@@ -4,11 +4,7 @@ using AssetManagement.Models;
 using AssetManagement.Models.Create;
 using AssetManagement.Page;
 using AssetManagement.Test.AssetManagement.Core.Test;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace AssetManagement.Test.CreateTest
 {
@@ -31,11 +27,7 @@ namespace AssetManagement.Test.CreateTest
 
 
         [Test, Description("Create User")]
-        [TestCase("admin_account", "create_user1")]
-        //[TestCase("admin_account2", "create_user2")]
-        //[TestCase("admin_account", "create_user3")]
-        //[TestCase("admin_account", "create_user4")]
-        //[TestCase("admin_account", "create_user5")]
+        [TestCase("admin_account", "create_user1")]  
 
         public void TC1_CreateUserSuccessfully(string accountKey, string userKey)
         {

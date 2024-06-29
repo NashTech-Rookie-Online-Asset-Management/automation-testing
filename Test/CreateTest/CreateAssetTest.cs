@@ -26,19 +26,7 @@ namespace AssetManagement.Test.CreateTest
 
         [Test, Description("Create Asset ")]
         [TestCase("admin_account2", "create_asset1")]
-        [TestCase("admin_account2", "create_asset3")]
-        //[TestCase("admin_account2", "create_asset4")]
-        //[TestCase("admin_account2", "create_asset5")]
-        //[TestCase("admin_account2", "create_asset6")]
-        //[TestCase("admin_account2", "create_asset7")]
-        //[TestCase("admin_account2", "create_asset8")]
-        //[TestCase("admin_account2", "create_asset9")]
-        //[TestCase("admin_account2", "create_asset10")]
-        //[TestCase("admin_account2", "create_asset2")]
-        ////[TestCase("admin_account2", "create_asset7")]
-
-
-
+        //[TestCase("admin_account2", "create_asset3")]
 
 
         public void TC1_CreateAssetSuccessfully(string accountKey, string assetKey)
