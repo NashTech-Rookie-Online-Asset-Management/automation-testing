@@ -9,7 +9,6 @@ namespace AssetManagement.DataProvider
         private static readonly Random Random = new Random();
         private static readonly Faker Faker = new Faker();
 
-
         public static UserCreate GenerateSingleUser()
         {
             return new UserCreate
@@ -28,7 +27,7 @@ namespace AssetManagement.DataProvider
             DateTime dateOfBirth;
             do
             {
-                int year = DateTime.Now.Year - 18 - Random.Next(0, 50); // Ensuring age is more than 18 years
+                int year = Random.Next(1980, DateTime.Now.Year - 18); // Year after 1980 and ensuring age is more than 18 years
                 int month = Random.Next(1, 13);
                 int day = Random.Next(1, DateTime.DaysInMonth(year, month) + 1);
                 dateOfBirth = new DateTime(year, month, day);
@@ -53,4 +52,5 @@ namespace AssetManagement.DataProvider
             return joinedDate.ToString("MMddyyyy");
         }
     }
+
 }

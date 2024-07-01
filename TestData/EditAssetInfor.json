@@ -1,9 +1,15 @@
 {
   "edit_assetcode": {
-    "assetCode": "KB000001",
-    "Name": "Laptop",
+    "assetCode": "HP000001",
+    "Name": "Headphone Bose Version2",
     "Specification": "RTX 4200, Z790, 32G",
     "InstalledDate": "06072024",
-    "State": "Not Available"
+    "State": "Waiting for recycling"
+  },
+  "edit_usercode": {
+    "staffCode": "SD0016",
+    "dateOfBirth": "05082003",
+    "gender": "female",
+    "joinDate": "05152024"
   }
 }

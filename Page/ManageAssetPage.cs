@@ -35,7 +35,7 @@ namespace AssetManagement.Page
         public void GoToEditAssetPage(AssetEdit assetData)
         {
             _txtSearchAsset.EnterText(assetData.assetCode);
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
             _svgOpenMenu.ClickOnElement();
             _svgEdit.ClickOnElement();
             Thread.Sleep(3000);

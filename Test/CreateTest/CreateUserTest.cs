@@ -3,6 +3,7 @@ using AssetManagement.DataProvider;
 using AssetManagement.Models;
 using AssetManagement.Models.Create;
 using AssetManagement.Page;
+using AssetManagement.Page.CreatePage;
 using AssetManagement.Test.AssetManagement.Core.Test;
 
 

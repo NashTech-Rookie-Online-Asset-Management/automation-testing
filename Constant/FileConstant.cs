@@ -13,6 +13,8 @@ namespace AssetManagement.Constant
         public const string AssetFilePath = @"TestData\AssetInfor.json";
         public const string UserFilePath = @"TestData\UserInfo.json";
         public const string AssetEditFilePath = @"TestData\EditAssetInfor.json";
+        public const string AssignmentCreateFilePath = @"TestData\AssignmentInfor.json";
+
 
     }
 }

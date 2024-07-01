@@ -2,6 +2,7 @@
 using AssetManagement.Constant;
 using AssetManagement.Core;
 using OpenQA.Selenium;
+using System.Security.Policy;
 
 
 namespace AssetManagement.Page
@@ -17,6 +18,7 @@ namespace AssetManagement.Page
         private WebObject _txtChangePasswordFirstTime = new WebObject(By.XPath("//input[@name='newPassword']"));
         private WebObject _btnSave = new WebObject(By.XPath("//button[text()='Save']"));
         private WebObject _btnClose = new WebObject(By.XPath("//button[text()='Close']"));
+        private WebObject _getTitle = new WebObject(By.XPath("//p[text()='Online Asset Management']"));
         public void Login(string username, string password)
         {
             _txtUserName.EnterText(username);
@@ -28,9 +30,16 @@ namespace AssetManagement.Page
             _txtUserName.EnterText(username);
             _txtPassword.EnterText(password);
             _btnLogin.ClickOnElement();
-            _txtChangePasswordFirstTime.EnterText(changePassWord);  
-            _btnSave.ClickOnElement();  
+            _txtChangePasswordFirstTime.EnterText(changePassWord);
+            _btnSave.ClickOnElement();
             _btnClose.ClickOnElement();
+
+        }
+
+        public void VerifyLoginSucess()
+        {
+           var value = _getTitle.GetTextFromElement();
+            Assert.That(value, Is.EqualTo("Online Asset Management"));
 
         }
 

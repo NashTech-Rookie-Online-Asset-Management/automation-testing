@@ -22,11 +22,13 @@ namespace AssetManagement.Page
         private WebObject _tabManageAssignment = new WebObject(By.XPath("//li[text()='Manage Assignment']"));
         private WebObject _tabRequestForReturn = new WebObject(By.XPath("//li[text()='Request for Returning']"));
         private WebObject _tabReport = new WebObject(By.XPath("//li[text()='Report']']"));
-       
+
         private WebObject _tabButton(string tabName) { return new WebObject(By.XPath($"//li[text()='{tabName}']")); }
 
         private WebObject _lblChangePassword = new WebObject(By.XPath("//h2[text()='Change Password']"));
         private WebObject _lblFirstChangePassword = new WebObject(By.XPath("//div[@class='pb-4']"));
+
+        private WebObject _ddlMenuUser = new WebObject(By.XPath("//button[@data-id='header-dropdown']"));
 
         public void GoToLogout()
         {
@@ -47,6 +49,10 @@ namespace AssetManagement.Page
             return _lblChangePassword.GetTextFromElement();
         }
 
+        public bool VerifyMenuDropDown()
+        {
+            return _mnuUserMenu.WaitForElementToBeVisible() != null;
+        }
 
 
         public void Logout()
@@ -62,7 +68,7 @@ namespace AssetManagement.Page
 
         public void GoToManageUserPage()
         {
-       
+
             _tabManageUser.ClickOnElement();
 
         }

@@ -1,19 +1,19 @@
 ﻿using AssetManagement.Core.Helper;
-using AssetManagement.Models;
 using AssetManagement.Models.Edit;
-using AssetManagement.Page;
 using AssetManagement.Page.EditPage;
+using AssetManagement.Page;
+using AssetManagement.Models;
 using AssetManagement.Test.AssetManagement.Core.Test;
-
+using AssetManagement.Models.Create;
 
 namespace AssetManagement.Test.EditTest
 {
-    public class EditAssetTest : BaseTest
+    public class EditStaffTest :BaseTest
     {
         private LoginPage _loginPage;
         private BasePage _basePage;
-        private ManageAssetPage _manageAssetPage;
-        private EditAssetPage _editAssetPage;
+        private ManangeUserPage _manageUserPage;
+        private EditStaffPage _editStaffPage;
         private string login_url = ConfigurationHelper.GetConfigurationByKey(Hooks.Config, "login_url");
 
         [SetUp]
@@ -21,17 +21,18 @@ namespace AssetManagement.Test.EditTest
         {
             _loginPage = new LoginPage();
             _basePage = new BasePage();
-            _manageAssetPage = new ManageAssetPage();
-            _editAssetPage = new EditAssetPage();
+            _manageUserPage = new ManangeUserPage();
+            _editStaffPage = new EditStaffPage();
         }
 
 
-        [Test, Description("Edit Asset ")]
-        [TestCase("admin_account", "edit_assetcode")]
-        public void TC1_EditAssetSuccessfully(string accountKey, string assetKey)
+        [Test, Description("Edit Staff ")]
+        [TestCase("admin_account", "edit_usercode")]
+        public void TC1_EditAssetSuccessfully(string accountKey, string staffKey)
         {
             Account account = AccountData[accountKey];
-            AssetEdit assetEdit = AssetEditData[assetKey];
+            
+            StaffEdit staffEdit = StaffEditData[staffKey];
 
             ExtentReportHelper.LogTestStep("Go to Login page");
             DriverHelper.NavigateTo(login_url);
@@ -40,17 +41,16 @@ namespace AssetManagement.Test.EditTest
             _loginPage.Login(account.username, account.password);
             _loginPage.ClickLoginButton();
 
-            ExtentReportHelper.LogTestStep("Go to EditAssetPage");
-            _basePage.GoToManageAssetPage();
-            _manageAssetPage.GoToEditAssetPage(assetEdit);
+            ExtentReportHelper.LogTestStep("Go to EditUserPage");
+            _basePage.GoToManageUserPage();
+            _manageUserPage.GoToEditStaffPage(staffEdit);
 
 
             ExtentReportHelper.LogTestStep("Edit Asset");
-            _editAssetPage.EditAsset(assetEdit);
+            _editStaffPage.EditStaff(staffEdit);
 
             ExtentReportHelper.LogTestStep("Verify edit Asset successfully");
-            _manageAssetPage.AssertAssetEditDetails(assetEdit);
+            _manageUserPage.AssertEditUserDetails(staffEdit);
         }
     }
 }
-

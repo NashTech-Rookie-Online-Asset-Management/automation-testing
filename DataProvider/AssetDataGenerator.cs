@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AssetManagement.DataProvider
 {
-    internal class Class1
+    public class AssetDataGenerator
     {
     }
 }

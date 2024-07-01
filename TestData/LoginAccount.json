@@ -1,11 +1,11 @@
 {
   "valid_account": {
-    "username": "caom",
-    "password": "caom@12052002"
+    "username": "caol13",
+    "password": "caol13@20042001"
   },
   "valid_account1": {
-    "username": "huynhc",
-    "password": "Huynhc@12062001"
+    "username": "caon",
+    "password": "Caon@12052001"
   },
   "invalid_account1": {
     "username": "datlt",
@@ -24,12 +24,16 @@
     "password": "Admins@12051999"
   },
   "valid_account_firsttime": {
-    "username": "huynhc",
-    "password": "Huynhc@12062001",
-    "changePassWord": "Huynhc@12062001"
+    "username": "caon",
+    "password": "Caon@12052001",
+    "changePassWord": "Caon@12052001"
   },
   "admin_account2": {
     "username": "binhnv",
     "password": "P@ssw0rd"
+  },
+  "admin_account_dev": {
+    "username": "admin1",
+    "password": "Admin1@01012001"
   }
 }

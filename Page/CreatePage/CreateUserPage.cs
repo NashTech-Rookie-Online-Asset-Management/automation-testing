@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AssetManagement.Page
+namespace AssetManagement.Page.CreatePage
 {
     public class CreateUserPage : BasePage
     {

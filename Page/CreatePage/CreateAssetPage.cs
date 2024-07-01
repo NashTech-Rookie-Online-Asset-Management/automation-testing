@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AssetManagement.Page
+namespace AssetManagement.Page.CreatePage
 {
-    public class CreateAssetPage: BasePage
+    public class CreateAssetPage : BasePage
     {
         private WebObject _txtName = new WebObject(By.XPath("//input[@name='name']"));
         private WebObject _ddlCategory = new WebObject(By.Id("open_category_list_btn"));
@@ -60,7 +60,7 @@ namespace AssetManagement.Page
         public void SelectState(string state)
         {
             State(state).ClickOnElement();
-           
+
         }
 
     }

@@ -54,9 +54,9 @@ namespace AssetManagement.Test
             //_loginPage.LoginFirstTime(account.username, account.password, account.changePassword);
             _loginPage.Login(account.username, account.password);
             _loginPage.ClickLoginButton();
-            
+
             ExtentReportHelper.LogTestStep("Verify login successfully");
-            Assert.That(_basePage.CheckLoggedInAsStaff, Is.True);
+            _basePage.VerifyMenuDropDown();
 
         }
 

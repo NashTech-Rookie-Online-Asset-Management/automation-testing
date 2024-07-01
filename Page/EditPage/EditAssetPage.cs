@@ -5,11 +5,11 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 
 
-namespace AssetManagement.Page
+namespace AssetManagement.Page.EditPage
 {
-    public class EditAssetPage:BasePage
+    public class EditAssetPage : BasePage
     {
- 
+
 
         private WebObject _txtName = new WebObject(By.XPath("//input[@name='name']"));
         private WebObject _txaSpecication = new WebObject(By.XPath("//textarea[@name='specification']"));
@@ -21,11 +21,11 @@ namespace AssetManagement.Page
         private WebObject _btnSave = new WebObject(By.XPath("//button[@type='submit']"));
         private WebObject _btnCancel = new WebObject(By.XPath("//a[text()='Cancel']"));
 
-     
+
 
         public void EnterName(string Name)
         {
-           _txtName.EnterValue(Name);
+            _txtName.EnterValue(Name);
         }
         public void EnterSpecification(string specification)
         {
@@ -45,7 +45,7 @@ namespace AssetManagement.Page
         {
             _btnSave.ClickOnElement();
         }
-    
+
         public void EditAsset(AssetEdit assetData)
         {
             EnterName(assetData.Name);
@@ -54,9 +54,9 @@ namespace AssetManagement.Page
             SelectState(assetData.State);
             //_btnCancel.ClickOnElement();
             ClickSaveButton();
-        
+
         }
-        
+
 
 
     }
