@@ -1,15 +1,15 @@
 {
   "edit_assetcode": {
-    "assetCode": "HP000001",
-    "Name": "Headphone Bose Version2",
+    "assetCode": "LP000027",
+    "Name": "Laptop Dell",
     "Specification": "RTX 4200, Z790, 32G",
     "InstalledDate": "06072024",
     "State": "Waiting for recycling"
   },
   "edit_usercode": {
-    "staffCode": "SD0016",
-    "dateOfBirth": "05082003",
-    "gender": "female",
+    "staffCode": "SD0333",
+    "dateOfBirth": "05132003",
+    "gender": "male",
     "joinDate": "05152024"
   }
 }

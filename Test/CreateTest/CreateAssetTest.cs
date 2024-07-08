@@ -1,7 +1,9 @@
 ﻿using AssetManagement.Core.Helper;
+using AssetManagement.DataProvider;
 using AssetManagement.Models;
 using AssetManagement.Models.Create;
 using AssetManagement.Page;
+using AssetManagement.Page.AuthenticationPage;
 using AssetManagement.Page.CreatePage;
 using AssetManagement.Test.AssetManagement.Core.Test;
 
@@ -14,6 +16,8 @@ namespace AssetManagement.Test.CreateTest
         private ManageAssetPage _manageAssetPage;
         private CreateAssetPage _createAssetPage;
         private string login_url = ConfigurationHelper.GetConfigurationByKey(Hooks.Config, "login_url");
+        private string login_url_dev = ConfigurationHelper.GetConfigurationByKey(Hooks.Config, "login_url_dev");
+
 
         [SetUp]
         public void PageSetUp()
@@ -26,17 +30,19 @@ namespace AssetManagement.Test.CreateTest
 
 
         [Test, Description("Create Asset ")]
-        [TestCase("admin_account2", "create_asset1")]
+        [TestCase("admin_account_dev", "create_asset3")]
         //[TestCase("admin_account2", "create_asset3")]
 
 
         public void TC1_CreateAssetSuccessfully(string accountKey, string assetKey)
         {
             Account account = AccountData[accountKey];
-            AssetCreate asset = AssetCreateData[assetKey];
+            AssetCreate asset2 = AssetDataGenerator.GenerateSingleAsset();
+            //AssetCreate asset = AssetCreateData[assetKey];
 
             ExtentReportHelper.LogTestStep("Go to Login page");
-            DriverHelper.NavigateTo(login_url);
+            //DriverHelper.NavigateTo(login_url);
+            DriverHelper.NavigateTo(login_url_dev);
 
             ExtentReportHelper.LogTestStep("Enter valid account");
             _loginPage.Login(account.username, account.password);
@@ -46,10 +52,11 @@ namespace AssetManagement.Test.CreateTest
             _basePage.GoToManageAssetPage();
 
             ExtentReportHelper.LogTestStep("Create new Asset");
-            _createAssetPage.CreateAsset(asset);
+            _createAssetPage.CreateAsset(asset2);
 
             ExtentReportHelper.LogTestStep("Verify create new Asset successfully");
-            _manageAssetPage.AssertAssetCreateDetails(asset);
+            _manageAssetPage.AssertAssetCreateDetails(asset2);
+            _manageAssetPage.DeleteNewAssetCreate();
         }
     }
 }

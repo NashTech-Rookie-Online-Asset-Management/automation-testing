@@ -6,5 +6,15 @@
         {
             DriverManager.driver.Navigate().GoToUrl(url);
         }
+
+        public static void Wait(int milliseconds)
+        {
+            Task.Delay(milliseconds).Wait();
+        }
+
+        public void RefreshPage()
+        {
+            DriverManager.driver.Navigate().Refresh();
+        }
     }
 }

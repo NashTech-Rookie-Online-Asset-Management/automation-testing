@@ -22,8 +22,17 @@ namespace AssetManagement.Page
         private WebObject _txtSearchStaff = new WebObject(By.XPath("//input[@placeholder='Search by name, staff code']"));
         private WebObject _svgOpenMenu = new WebObject(By.XPath("//span[text()='Open menu']/parent::button"));
         private WebObject _svgEdit = new WebObject(By.XPath("//a[@role='menuitem']"));
+        private WebObject _svgDisable = new WebObject(By.XPath("//div[@role='menuitem']"));
+
+        private WebObject _btnClose = new WebObject(By.XPath("//div[@role='dialog']//button"));
+
+        private WebObject _btnDisable = new WebObject(By.XPath("//button[@data-id='delete-button']"));
+        private WebObject _btnCancel = new WebObject(By.XPath("//button[@data-id='change-password-cancel-button']"));
+
 
         private WebObject _msgEditUserSuccessfully = new WebObject(By.XPath("//div[text()='Successfully edited user']"));
+
+
 
         public string GetUserDetail(string label)
         {
@@ -39,10 +48,22 @@ namespace AssetManagement.Page
         public void GoToEditStaffPage(StaffEdit staffData)
         {
             _txtSearchStaff.EnterText(staffData.staffCode);
-            Thread.Sleep(2000);
+            DriverHelper.Wait(2000);
+            //Thread.Sleep(2000);
             _svgOpenMenu.ClickOnElement();
             _svgEdit.ClickOnElement();
+
+
+        }
+        public void DisabledNewUserCreate()
+        {
+            var _expectedStaffCode = _firstrowStaffCodeUser.GetTextFromElement();
             
+            _txtSearchStaff.EnterText(_expectedStaffCode);
+            DriverHelper.Wait(3000);
+            _svgOpenMenu.ClickOnElement();
+            _svgDisable.ClickOnElement();
+            _btnDisable.ClickOnElement();    
 
         }
 
@@ -57,6 +78,8 @@ namespace AssetManagement.Page
             Assert.AreEqual(expectedUser.gender, GetUserDetail("Gender").ToLower(), "Gender does not match.");
             Assert.AreEqual(StringHelper.FormatDate(expectedUser.joinedDate), GetUserDetail("Joined Date"), "Joined date does not match.");
             Assert.AreEqual(expectedUser.type, GetUserDetail("Type"), "Type does not match.");
+            _btnClose.ClickOnElement();
+          
         }
 
 
@@ -65,8 +88,10 @@ namespace AssetManagement.Page
             Assert.That(getCorrecEditUserMessage(), Is.EqualTo("Successfully edited user"));
 
             _rowVerifyUser.ClickOnElement();
+            DriverHelper.Wait(2000);
             var _expectedStaffCode = _firstrowStaffCodeUser.GetTextFromElement();
-            Thread.Sleep(2000);
+
+            //Thread.Sleep(2000);
 
             Assert.AreEqual(_expectedStaffCode, GetUserDetail("Staff Code"), "Staff Code does not match.");
             Assert.AreEqual(StringHelper.FormatDate(expectedUser.dateOfBirth), GetUserDetail("Date of Birth"), "Date of birth does not match.");

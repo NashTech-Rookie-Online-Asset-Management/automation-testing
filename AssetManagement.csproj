@@ -37,19 +37,19 @@
     <None Update="Configurations\appsettings.json">
        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="TestData\AssetInfor.json">
+    <None Update="TestData\AssetInformation.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="TestData\AssignmentInfor.json">
+    <None Update="TestData\AssignmentInformation.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="TestData\EditAssetInfor.json">
+    <None Update="TestData\EditInformation.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="TestData\LoginAccount.json">
+    <None Update="TestData\Account.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="TestData\UserInfo.json">
+    <None Update="TestData\DataCreateUser.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

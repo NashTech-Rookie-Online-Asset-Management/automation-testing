@@ -18,7 +18,6 @@ namespace AssetManagement.Test
             protected Dictionary<string, UserCreate> UserCreateData;
             protected Dictionary<string, AssetEdit> AssetEditData;
             protected Dictionary<string, StaffEdit> StaffEditData;
-
             protected Dictionary<string, AssignMentCreate> AssignmentCreateData;
 
 
@@ -31,8 +30,8 @@ namespace AssetManagement.Test
                 AccountData = JsonHelper.ReadAndParse<Dictionary<string, Account>>(FileConstant.AccountFilePath.GetAbsolutePath());
                 AssetCreateData = JsonHelper.ReadAndParse<Dictionary<string, AssetCreate>>(FileConstant.AssetFilePath.GetAbsolutePath());
                 UserCreateData = JsonHelper.ReadAndParse<Dictionary<string, UserCreate>>(FileConstant.UserFilePath.GetAbsolutePath());
-                AssetEditData = JsonHelper.ReadAndParse<Dictionary<string, AssetEdit>>(FileConstant.AssetEditFilePath.GetAbsolutePath());
-                StaffEditData = JsonHelper.ReadAndParse<Dictionary<string, StaffEdit>>(FileConstant.AssetEditFilePath.GetAbsolutePath());
+                AssetEditData = JsonHelper.ReadAndParse<Dictionary<string, AssetEdit>>(FileConstant.EditFilePath.GetAbsolutePath());
+                StaffEditData = JsonHelper.ReadAndParse<Dictionary<string, StaffEdit>>(FileConstant.EditFilePath.GetAbsolutePath());
 
                 AssignmentCreateData = JsonHelper.ReadAndParse<Dictionary<string, AssignMentCreate>>(FileConstant.AssignmentCreateFilePath.GetAbsolutePath());
 

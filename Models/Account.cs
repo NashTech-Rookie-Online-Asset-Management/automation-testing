@@ -11,5 +11,6 @@ namespace AssetManagement.Models
         public string username { get; set; }
         public string password { get; set; }
         public string changePassword { get; set; }
+        public string newpassword { get; set; }
     }
 }

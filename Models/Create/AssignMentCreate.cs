@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,10 @@ namespace AssetManagement.Models.Create
     {
         public string StaffCode { get; set; }
         public string AssetCode { get; set; }
-        public string Date { get; set; }
+
+        [JsonProperty("Assigned date")]
+        public string AssigneddDated { get; set; }
         public string Note { get; set; }
+        public string State { get; set; }
     }
 }

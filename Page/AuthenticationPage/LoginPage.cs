@@ -1,11 +1,10 @@
-﻿
-using AssetManagement.Constant;
+﻿using AssetManagement.Constant;
 using AssetManagement.Core;
 using OpenQA.Selenium;
 using System.Security.Policy;
 
 
-namespace AssetManagement.Page
+namespace AssetManagement.Page.AuthenticationPage
 {
     public class LoginPage
     {
@@ -14,7 +13,7 @@ namespace AssetManagement.Page
         private WebObject _btnLogin = new WebObject(By.XPath("//button[text()='Login']"));
         private WebObject _msgIncorrectMessage = new WebObject(By.XPath("//div[@class='relative']/following-sibling::p"));
         private WebObject _titleHomePage = new WebObject(By.XPath("//h1[text()='Home']"));
-        private WebObject _titleLogin = new WebObject(By.CssSelector("h3"));
+        private WebObject _titleLogin = new WebObject(By.XPath("//h3[text()='Login']"));
         private WebObject _txtChangePasswordFirstTime = new WebObject(By.XPath("//input[@name='newPassword']"));
         private WebObject _btnSave = new WebObject(By.XPath("//button[text()='Save']"));
         private WebObject _btnClose = new WebObject(By.XPath("//button[text()='Close']"));
@@ -38,7 +37,7 @@ namespace AssetManagement.Page
 
         public void VerifyLoginSucess()
         {
-           var value = _getTitle.GetTextFromElement();
+            var value = _getTitle.GetTextFromElement();
             Assert.That(value, Is.EqualTo("Online Asset Management"));
 
         }

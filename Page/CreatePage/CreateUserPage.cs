@@ -80,7 +80,7 @@ namespace AssetManagement.Page.CreatePage
             SelectType(staffUser.type);
             ClickSaveButton();
             _btnConfirm.ClickOnElement();
-            Thread.Sleep(4000);
+            Thread.Sleep(2000);
 
         }
     }

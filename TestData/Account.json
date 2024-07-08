@@ -1,0 +1,80 @@
+{
+  "valid_account_dev_TC01": {
+    "username": "caol37",
+    "password": "caol37@15022003",
+    "changePassWord": "",
+    "newpassword": ""
+  },
+  "valid_account_dev_TC02": {
+    "username": "caol38",
+    "password": "caol38@12062000",
+    "changePassword": "Caol38@12062000",
+    "newpassword": "Caod@12061996ss"
+  },
+  "valid_account_dev": {
+    "username": "caot3",
+    "password": "Caot3@12022003ss",
+    "changePassWord": "",
+    "newpassword": "Caot3@12022003"
+  },
+  "valid_account_devft": {
+    "username": "caol28",
+    "password": "caol28@12022003",
+    "newpassword": "Caot3@12022003ss"
+  },
+  "invalid_accountTC03_1": {
+    "username": "datlt",
+    "password": "",
+    "changePassWord": "",
+    "newpassword": ""
+  },
+  "invalid_accountTC03_2": {
+    "username": "",
+    "password": "Datlt@19062000",
+    "changePassWord": "",
+    "newpassword": ""
+  },
+  "invalid_accountTC04": {
+    "username": "asdsadsads",
+    "password": "Datlt@19062000",
+    "changePassWord": "",
+    "newpassword": ""
+  },
+  "valid_account_firsttime": {
+    "username": "caon",
+    "password": "Caon@12052001",
+    "changePassWord": "Caon@12052001"
+  },
+  "admin_account_dev": {
+    "username": "admin1",
+    "password": "Admin1@01012001"
+  },
+  "admin_account_dev2": {
+    "username": "adminh",
+    "password": "Adminh@22071988"
+  },
+  "admin_account": {
+    "username": "admins",
+    "password": "Admins@12051999",
+    "changePassWord": "",
+    "newpassword": ""
+  },
+  "test_account_dev": {
+    "username": "testu3",
+    "password": "Testu3@12062002",
+    "changePassWord": "",
+    "newpassword": ""
+  },
+  "accountfortest": {
+    "username": "adminh",
+    "password": "adminh@22071988",
+    "changePassWord": "",
+    "newpassword": "Adminh@22071988"
+  }
+}
+
+//MO000027
+//SD0433
+//ADmin
+//SD0461
+//LP000049

@@ -1,0 +1,18 @@
+{
+  "create_user1": {
+    "firstName": "Cao",
+    "lastName": "Long",
+    "dateOfBirth": "03302001",
+    "gender": "male",
+    "joinedDate": "07242024",
+    "type": "Staff"
+  },
+  "create_user2": {
+    "firstName": "Tran",
+    "lastName": "Quang",
+    "dateOfBirth": "05051995",
+    "gender": "male",
+    "joinedDate": "05202027",
+    "type": "Staff"
+  }
+}

@@ -2,10 +2,11 @@
 using AssetManagement.Core.Helper;
 using AssetManagement.Models;
 using AssetManagement.Page;
+using AssetManagement.Page.AuthenticationPage;
 using AssetManagement.Test.AssetManagement.Core.Test;
 
 
-namespace AssetManagement.Test
+namespace AssetManagement.Test.UserManagementTest
 {
 
 
@@ -15,6 +16,8 @@ namespace AssetManagement.Test
         private LoginPage _loginPage;
         private BasePage _basePage;
         private string login_url = ConfigurationHelper.GetConfigurationByKey(Hooks.Config, "login_url");
+        private string login_url_dev = ConfigurationHelper.GetConfigurationByKey(Hooks.Config, "login_url_dev");
+
 
         [SetUp]
         public void PageSetUp()
@@ -24,19 +27,19 @@ namespace AssetManagement.Test
         }
 
         [Test, Description("Logout successfully flow")]
-        [TestCase("valid_account1")]
+        [TestCase("admin_account_dev")]
         public void TC_LogouSucceced(string accountKey)
         {
             Account account = AccountData[accountKey];
 
             ExtentReportHelper.LogTestStep("Go to Login page");
-            DriverHelper.NavigateTo(login_url);
+            DriverHelper.NavigateTo(login_url_dev);
 
             ExtentReportHelper.LogTestStep("Enter valid account");
             _loginPage.Login(account.username, account.password);
             _loginPage.ClickLoginButton();
 
-            ExtentReportHelper.LogTestStep("Logout ");
+            ExtentReportHelper.LogTestStep("Go to Logout ");
             _basePage.Logout();
 
             ExtentReportHelper.LogTestStep("Verify logout successfully");

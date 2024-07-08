@@ -9,11 +9,11 @@ namespace AssetManagement.Constant
     public class FileConstant
     {
 
-        public const string AccountFilePath = @"TestData\LoginAccount.json";
-        public const string AssetFilePath = @"TestData\AssetInfor.json";
-        public const string UserFilePath = @"TestData\UserInfo.json";
-        public const string AssetEditFilePath = @"TestData\EditAssetInfor.json";
-        public const string AssignmentCreateFilePath = @"TestData\AssignmentInfor.json";
+        public const string AccountFilePath = @"TestData\Account.json";
+        public const string AssetFilePath = @"TestData\AssetInformation.json";
+        public const string UserFilePath = @"TestData\DataCreateUser.json";
+        public const string EditFilePath = @"TestData\EditInformation.json";
+        public const string AssignmentCreateFilePath = @"TestData\AssignmentInformation.json";
 
 
     }

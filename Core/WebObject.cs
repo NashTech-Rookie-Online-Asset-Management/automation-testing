@@ -73,11 +73,15 @@ namespace AssetManagement.Core
             }
         }
 
+        
+        
+
         public void ClickOnElement()
         {
             IWebElement element = WaitForElementToBeVisible();
-            ScrollToElement();
+            //ScrollToElement();
             element.Click();
+            
         }
         public string GetTextFromElement()
         {
@@ -152,6 +156,15 @@ namespace AssetManagement.Core
                    .Perform();
         }
 
+        public void ClickByJs()
+        {
+            IWebElement element = WaitForElementToBeClickEnable();
+            IJavaScriptExecutor js = (IJavaScriptExecutor)DriverManager.driver;
+            js.ExecuteScript("arguments[0].click();", element);
+        }
+
+
+        
     }
 }
 

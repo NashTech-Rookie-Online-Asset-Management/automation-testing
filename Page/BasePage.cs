@@ -1,6 +1,7 @@
 ﻿
 using AngleSharp.Dom;
 using AssetManagement.Core;
+using AssetManagement.Core.Helper;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
@@ -8,7 +9,7 @@ using SeleniumExtras.WaitHelpers;
 
 namespace AssetManagement.Page
 {
-    public class BasePage
+    public class BasePage 
     {
         private WebObject _txtHeader = new WebObject(By.XPath("//h4[text()='Online Asset Management']"));
         private WebObject _mnuUserMenu = new WebObject(By.XPath("//button[@data-id='header-dropdown']"));
@@ -41,6 +42,7 @@ namespace AssetManagement.Page
         {
             _mnuUserMenu.ClickOnElement();
             _btnChangepasswordMenu.ClickOnElement();
+           
 
         }
 
@@ -102,6 +104,9 @@ namespace AssetManagement.Page
                     !_tabButton("Request For Return").CheckElementExistWithoutWait() &&
                     !_tabButton("Report").CheckElementExistWithoutWait());
         }
+
+
+       
 
     }
 }

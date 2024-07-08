@@ -2,6 +2,7 @@
 using AssetManagement.Models;
 using AssetManagement.Models.Edit;
 using AssetManagement.Page;
+using AssetManagement.Page.AuthenticationPage;
 using AssetManagement.Page.EditPage;
 using AssetManagement.Test.AssetManagement.Core.Test;
 
@@ -15,6 +16,8 @@ namespace AssetManagement.Test.EditTest
         private ManageAssetPage _manageAssetPage;
         private EditAssetPage _editAssetPage;
         private string login_url = ConfigurationHelper.GetConfigurationByKey(Hooks.Config, "login_url");
+        private string login_url_dev = ConfigurationHelper.GetConfigurationByKey(Hooks.Config, "login_url_dev");
+
 
         [SetUp]
         public void PageSetUp()
@@ -27,14 +30,14 @@ namespace AssetManagement.Test.EditTest
 
 
         [Test, Description("Edit Asset ")]
-        [TestCase("admin_account", "edit_assetcode")]
+        [TestCase("admin_account_dev", "edit_assetcode")]
         public void TC1_EditAssetSuccessfully(string accountKey, string assetKey)
         {
             Account account = AccountData[accountKey];
             AssetEdit assetEdit = AssetEditData[assetKey];
 
             ExtentReportHelper.LogTestStep("Go to Login page");
-            DriverHelper.NavigateTo(login_url);
+            DriverHelper.NavigateTo(login_url_dev);
 
             ExtentReportHelper.LogTestStep("Enter valid account");
             _loginPage.Login(account.username, account.password);
