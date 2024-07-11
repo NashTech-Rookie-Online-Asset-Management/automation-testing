@@ -1,16 +1,24 @@
 {
   "create_assignment": {
-    "StaffCode": "SD0422",
-    "AssetCode": "LP000024",
+    "StaffCode": "SD0240",
+    "AssetCode": "LP000005",
     "Assigned date": "06152026",
     "Note": "Dont need to fill out this Note",
     "State": "Waiting for acceptance"
   },
   "create_assignment2": {
-    "StaffCode": "SD0207",
+    "StaffCode": "SD0255",
     "AssetCode": "LP000028",
-    "Assigned date": "11122026",
+    "Assigned date": "07112024",
     "Note": "Dont need to fill out this Note",
     "State": "Waiting for acceptance"
+  },
+  "create_assignment3": {
+    "StaffCode": "SD0111",
+    "AssetCode": "KB000006",
+    "Assigned date": "07122024",
+    "Note": "Dont need to fill out this Note",
+    "State": "Waiting for acceptance"
+
   }
 }

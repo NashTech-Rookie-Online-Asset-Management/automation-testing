@@ -1,15 +1,15 @@
 {
   "edit_assetcode": {
-    "assetCode": "LP000027",
-    "Name": "Laptop Dell",
-    "Specification": "RTX 4200, Z790, 32G",
+    "assetCode": "HP000003",
+    "Name": "Headphone Sony Version 4",
+    "Specification": "Over-Ear, Noise 4g Cancelling",
     "InstalledDate": "06072024",
-    "State": "Waiting for recycling"
+    "State": "Available"
   },
   "edit_usercode": {
-    "staffCode": "SD0333",
-    "dateOfBirth": "05132003",
+    "staffCode": "SD0111",
+    "dateOfBirth": "05132001",
     "gender": "male",
-    "joinDate": "05152024"
+    "joinDate": "07212025"
   }
 }

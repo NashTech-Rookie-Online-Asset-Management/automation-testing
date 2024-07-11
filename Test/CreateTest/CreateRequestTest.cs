@@ -2,11 +2,6 @@
 using AssetManagement.Page.AuthenticationPage;
 using AssetManagement.Page;
 using AssetManagement.Test.AssetManagement.Core.Test;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AssetManagement.Models;
 using AssetManagement.Page.CreatePage;
 
@@ -30,14 +25,18 @@ namespace AssetManagement.Test.CreateTest
         }
 
         [Test, Description("Users Create Request successfully")]
-        [TestCase("admin_account_dev2", "LP000049", "Waiting for returning")]
-        public void TC1_CreateRequestSuccessfully(string accountKey,string codeSearch,string state)
+        //[TestCase("test_account_dev", "LP000034", "Waiting for returning")]
+        [TestCase("test_account", "KB000004", "Waiting for returning")]
+
+        //[TestCase("admin_account_dev2", "LP000049", "Waiting for returning")]
+
+        public void TC1_CreateRequestSuccessfully(string accountKey, string codeSearch, string state)
         {
             Account account = AccountData[accountKey];
 
             ExtentReportHelper.LogTestStep("Go to Login page");
-            DriverHelper.NavigateTo(login_url_dev);
-            //DriverHelper.NavigateTo(login_url);
+            //DriverHelper.NavigateTo(login_url_dev);
+            DriverHelper.NavigateTo(login_url);
 
             ExtentReportHelper.LogTestStep("Enter valid account");
             _loginPage.Login(account.username, account.password);
@@ -49,8 +48,9 @@ namespace AssetManagement.Test.CreateTest
 
 
             ExtentReportHelper.LogTestStep("Verify Create Request successfully");
-            _createRequestPage.VerifyCreateRequestSuccessfully(codeSearch,state);
+            _createRequestPage.VerifyCreateRequestSuccessfully(codeSearch, state);
 
         }
+
     }
 }

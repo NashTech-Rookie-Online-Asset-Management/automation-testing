@@ -10,6 +10,7 @@ using AssetManagement.Test.AssetManagement.Core.Test;
 
 namespace AssetManagement.Test.CreateTest
 {
+    
     public class CreateUserTest : BaseTest
     {
         private LoginPage _loginPage;
@@ -29,34 +30,42 @@ namespace AssetManagement.Test.CreateTest
         }
 
 
+        //[Test, Description("Create User")]
+        ////[TestCase("admin_account_dev", "create_user1")]
+        //[TestCase("admin_account", "create_user1")]
+
+
+
+        //public void TC1_CreateUserSuccessfully(string accountKey, string userKey)
+        //{
+        //    Account account = AccountData[accountKey];
+        //    UserCreate user = UserCreateData[userKey];
+
+        //    ExtentReportHelper.LogTestStep("Go to Login page");
+        //    DriverHelper.NavigateTo(login_url);
+        //    //DriverHelper.NavigateTo(login_url_dev);
+
+        //    ExtentReportHelper.LogTestStep("Enter valid account");
+        //    _loginPage.Login(account.username, account.password);
+        //    _loginPage.ClickLoginButton();
+
+        //    ExtentReportHelper.LogTestStep("Go to ManageUserPage");
+        //    _manageUserPage.GoToManageUserPage();
+
+        //    ExtentReportHelper.LogTestStep("Create new User");
+        //    _createUserPage.CreateUser(user);
+
+        //    ExtentReportHelper.LogTestStep("Verify create new User successfully");
+        //    _manageUserPage.AssertUserDetails(user);
+        //    _manageUserPage.DisabledNewUserCreate();
+        //}
+
+
+
         [Test, Description("Create User")]
-        [TestCase("admin_account_dev", "create_user1")]  
+        //[TestCase("admin_account_dev")]
+        [TestCase("admin_account")]
 
-        public void TC1_CreateUserSuccessfully(string accountKey, string userKey)
-        {
-            Account account = AccountData[accountKey];
-            UserCreate user = UserCreateData[userKey];
-
-            ExtentReportHelper.LogTestStep("Go to Login page");
-            //DriverHelper.NavigateTo(login_url);
-            DriverHelper.NavigateTo(login_url_dev);
-
-            ExtentReportHelper.LogTestStep("Enter valid account");
-            _loginPage.Login(account.username, account.password);
-            _loginPage.ClickLoginButton();
-
-            ExtentReportHelper.LogTestStep("Go to ManageUserPage");
-            _manageUserPage.GoToManageUserPage();
-
-            ExtentReportHelper.LogTestStep("Create new User");
-            _createUserPage.CreateUser(user);
-
-            ExtentReportHelper.LogTestStep("Verify create new User successfully");
-            _manageUserPage.AssertUserDetails(user);
-        }
-
-        [Test, Description("Create User")]
-        [TestCase("admin_account_dev")]
 
         public void TC2_CreateUserSuccessfully(string accountKey)
         {
@@ -64,8 +73,8 @@ namespace AssetManagement.Test.CreateTest
             UserCreate user = UserDataGenerator.GenerateSingleUser();
 
             ExtentReportHelper.LogTestStep("Go to Login page");
-            //DriverHelper.NavigateTo(login_url);
-            DriverHelper.NavigateTo(login_url_dev);
+            DriverHelper.NavigateTo(login_url);
+            //DriverHelper.NavigateTo(login_url_dev);
 
 
             ExtentReportHelper.LogTestStep("Enter valid account");

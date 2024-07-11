@@ -30,14 +30,18 @@ namespace AssetManagement.Test.EditTest
 
 
         [Test, Description("Edit Asset ")]
-        [TestCase("admin_account_dev", "edit_assetcode")]
+        //[TestCase("admin_account_dev", "edit_assetcode")]
+        [TestCase("admin_account", "edit_assetcode")]
+
         public void TC1_EditAssetSuccessfully(string accountKey, string assetKey)
         {
             Account account = AccountData[accountKey];
             AssetEdit assetEdit = AssetEditData[assetKey];
 
             ExtentReportHelper.LogTestStep("Go to Login page");
-            DriverHelper.NavigateTo(login_url_dev);
+            //DriverHelper.NavigateTo(login_url_dev);
+            DriverHelper.NavigateTo(login_url);
+
 
             ExtentReportHelper.LogTestStep("Enter valid account");
             _loginPage.Login(account.username, account.password);

@@ -30,12 +30,14 @@ namespace AssetManagement.Test.UserManagementTest
 
         [Test, Description("Log in with valid account")]
         [TestCase("valid_account_dev")]
+
         public void TC1_ChangePasswordStaff(string accountKey)
         {
             Account account = AccountData[accountKey];
 
             ExtentReportHelper.LogTestStep("Go to Login page");
             DriverHelper.NavigateTo(login_url_dev);
+            DriverHelper.NavigateTo(login_url);
 
             ExtentReportHelper.LogTestStep("Enter valid account");
             _loginPage.Login(account.username, account.password);

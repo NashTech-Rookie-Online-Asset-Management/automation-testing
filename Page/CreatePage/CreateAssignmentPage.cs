@@ -1,4 +1,5 @@
 ﻿using AssetManagement.Core;
+using AssetManagement.Core.Helper;
 using AssetManagement.Models.Create;
 using OpenQA.Selenium;
 using System;
@@ -40,6 +41,7 @@ namespace AssetManagement.Page.CreatePage
         {
             _txtSearchUser.ClickOnElement();
             _txtFindUser.EnterText(assignment.StaffCode);
+            DriverHelper.Wait(2000);
             _firstRowInfo.ClickOnElement();
             //_btnCancelSearchAssigntMent.ClickOnElement();
             _btnSaveSearchAssigntMent.ClickOnElement();
@@ -49,6 +51,7 @@ namespace AssetManagement.Page.CreatePage
         {
             _txtSearchAsset.ClickOnElement();
             _txtFindAsset.EnterText(assignment.AssetCode);
+            DriverHelper.Wait(2000);
             _firstRowInfo.ClickOnElement();
             //_btnCancelSearchAssigntMent.ClickOnElement();
             _btnSaveSearchAssigntMent.ClickOnElement();
@@ -58,7 +61,7 @@ namespace AssetManagement.Page.CreatePage
         public void FillAssignmenInformation(AssignMentCreate assignment)
         {
             GoToCreateAssignMentPage();
-            SearchUser(assignment);
+            SearchUser(assignment);         
             SearchAsset(assignment);
             AssignedDate(assignment.AssigneddDated);
             EnterNote(assignment.Note);

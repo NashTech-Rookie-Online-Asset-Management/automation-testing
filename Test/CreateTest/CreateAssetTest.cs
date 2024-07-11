@@ -30,7 +30,9 @@ namespace AssetManagement.Test.CreateTest
 
 
         [Test, Description("Create Asset ")]
-        [TestCase("admin_account_dev", "create_asset3")]
+        //[TestCase("admin_account_dev", "create_asset3")]
+        [TestCase("admin_account", "create_asset3")]
+
         //[TestCase("admin_account2", "create_asset3")]
 
 
@@ -41,8 +43,8 @@ namespace AssetManagement.Test.CreateTest
             //AssetCreate asset = AssetCreateData[assetKey];
 
             ExtentReportHelper.LogTestStep("Go to Login page");
-            //DriverHelper.NavigateTo(login_url);
-            DriverHelper.NavigateTo(login_url_dev);
+            DriverHelper.NavigateTo(login_url);
+            //DriverHelper.NavigateTo(login_url_dev);
 
             ExtentReportHelper.LogTestStep("Enter valid account");
             _loginPage.Login(account.username, account.password);

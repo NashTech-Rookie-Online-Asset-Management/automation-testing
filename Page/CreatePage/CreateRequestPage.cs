@@ -31,12 +31,25 @@ namespace AssetManagement.Page.CreatePage
         private WebObject _assetCode(string assetCode) { return new WebObject(By.XPath($"//td[.='{assetCode}']/..//button")); }
         private WebObject _rowVerifyAsset(string assetCode) { return new WebObject(By.XPath($"//td[.='{assetCode}']/..")); }
 
+        private WebObject _ddlAccept = new WebObject(By.XPath("//div[text()='Accept']"));
+        private WebObject _btnAccept = new WebObject(By.XPath("//button[text()='Accept']"));
+        private WebObject _btnClose = new WebObject(By.XPath("//div[@role='dialog']//button"));
+
+
+
+        public void AcceptAssignMent(string assetCode)
+        {
+            _assetCode(assetCode).ClickOnElement();
+            _ddlAccept.ClickOnElement();
+            _btnAccept.ClickOnElement();
+            DriverHelper.Wait(2000);
+        }
 
 
         public void CreateRequestWithAssetCode(string asssetCode)
         {
             _assetCode(asssetCode).ClickOnElement();
-            _dllRequestForReturning.ClickOnElement();   
+            _dllRequestForReturning.ClickOnElement();
             _btnYes.ClickOnElement();
         }
         public string GetAssetDetail(string label)
@@ -63,10 +76,10 @@ namespace AssetManagement.Page.CreatePage
             _rowVerifyAsset(codeAsset).ClickOnElement();
             DriverHelper.Wait(3000);
             var _expectedAssetCode = codeAsset;
-            Thread.Sleep(2000);
-
+            
             Assert.AreEqual(_expectedAssetCode, GetAssetDetail("Asset Code"), "Asset Code does not match.");
             Assert.AreEqual(State, GetAssetDetail("State"), "State does not match.");
+            _btnClose.ClickOnElement();
 
         }
 

@@ -35,9 +35,10 @@ namespace AssetManagement.Test.CreateTest
 
 
         [Test, Description("Create Asset ")]
-        [TestCase("admin_account_dev", "create_assignment")]
-        //[TestCase("admin_account2", "create_asset3")]
-
+        //[TestCase("admin_account_dev", "create_assignment2")]
+        //[TestCase("admin_account", "create_assignment2")]
+        [TestCase("admin_account", "create_assignment3")]
+     
 
 
         public void TC1_CreateAssignmenttSuccessfully(string accountKey, string assignmenKey)
@@ -46,8 +47,8 @@ namespace AssetManagement.Test.CreateTest
             AssignMentCreate assignment = AssignmentCreateData[assignmenKey];
 
             ExtentReportHelper.LogTestStep("Go to Login page");
-            //DriverHelper.NavigateTo(login_url);
-            DriverHelper.NavigateTo(login_url_dev);
+            DriverHelper.NavigateTo(login_url);
+            //DriverHelper.NavigateTo(login_url_dev);
 
 
             ExtentReportHelper.LogTestStep("Enter valid account");
@@ -57,7 +58,7 @@ namespace AssetManagement.Test.CreateTest
 
             ExtentReportHelper.LogTestStep("Go to CreateAssignment Page");
             _basePage.GoToManageAssignmentPage();
-            //DriverHelper.NavigateTo("https://asset-management-fe-staging.azurewebsites.net/assignments/create");
+            
 
             ExtentReportHelper.LogTestStep("Create new Asset");
             _assignmentCreatePage.FillAssignmenInformation(assignment);

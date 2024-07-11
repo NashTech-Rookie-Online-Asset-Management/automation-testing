@@ -1,26 +1,27 @@
 {
   "valid_account_dev_TC01": {
-    "username": "caol37",
-    "password": "caol37@15022003",
+    "username": "caol18",
+    "password": "caol18@12052001",
     "changePassWord": "",
     "newpassword": ""
   },
   "valid_account_dev_TC02": {
-    "username": "caol38",
-    "password": "caol38@12062000",
-    "changePassword": "Caol38@12062000",
+    "username": "caol46",
+    "password": "caol46@12062001",
+    "changePassword": "Caol46@12062001",
     "newpassword": "Caod@12061996ss"
   },
   "valid_account_dev": {
-    "username": "caot3",
-    "password": "Caot3@12022003ss",
+    "username": "caol21",
+    "password": "Caol21@12062002",
     "changePassWord": "",
-    "newpassword": "Caot3@12022003"
+    "newpassword": "Caol21@12062002ss"
   },
-  "valid_account_devft": {
-    "username": "caol28",
-    "password": "caol28@12022003",
-    "newpassword": "Caot3@12022003ss"
+  "valid_account": {
+    "username": "caob",
+    "password": "caob@07082002",
+    "changePassword": "Caob@07082002",
+    "newpassword": "Caol19@04052002ss"
   },
   "invalid_accountTC03_1": {
     "username": "datlt",
@@ -60,8 +61,14 @@
     "newpassword": ""
   },
   "test_account_dev": {
-    "username": "testu3",
-    "password": "Testu3@12062002",
+    "username": "caot3",
+    "password": "Caot3@12022003ss",
+    "changePassWord": "",
+    "newpassword": ""
+  },
+  "test_account": {
+    "username": "caol23",
+    "password": "Caol23@12052001",
     "changePassWord": "",
     "newpassword": ""
   },
@@ -73,8 +80,30 @@
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //MO000027
 //SD0433
+
 //ADmin
 //SD0461
 //LP000049
+
+//Staff
+//SD0423
+//LP000036

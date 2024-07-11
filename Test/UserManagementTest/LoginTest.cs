@@ -33,8 +33,8 @@ namespace AssetManagement.Test.UserManagementTest
             Account account = AccountData[accountKey];
 
             ExtentReportHelper.LogTestStep("Go to Login page");
-            DriverHelper.NavigateTo(login_url_dev);
-            //DriverHelper.NavigateTo(login_url);
+            //DriverHelper.NavigateTo(login_url_dev);
+            DriverHelper.NavigateTo(login_url);
 
             ExtentReportHelper.LogTestStep("Enter valid account");
             _loginPage.Login(account.username, account.password);
@@ -48,22 +48,34 @@ namespace AssetManagement.Test.UserManagementTest
         }
 
         [Test, Description("Log in with valid account and changepassword first time")]
-        [TestCase("valid_account_dev_TC02")]
+        //[TestCase("valid_account_dev_TC02")]
+        [TestCase("valid_account")]
+
         public void TC2_LoginSucceced(string accountKey)
         {
             Account account = AccountData[accountKey];
 
             ExtentReportHelper.LogTestStep("Go to Login page");
-            DriverHelper.NavigateTo(login_url_dev);
+            //DriverHelper.NavigateTo(login_url_dev);
+            DriverHelper.NavigateTo(login_url);
 
-           //Create New Account before running test
+
+            //Create New Account before running test
             ExtentReportHelper.LogTestStep("Enter valid account");
             _loginPage.LoginFirstTime(account.username, account.password, account.changePassword);
           
 
+            //ExtentReportHelper.LogTestStep("Verify login successfully");
+            //_basePage.VerifyMenuDropDown();
+
+
+            _basePage.Logout();
+            _loginPage.Login(account.username, account.changePassword);
+            _loginPage.ClickLoginButton();
+
+
             ExtentReportHelper.LogTestStep("Verify login successfully");
             _basePage.VerifyMenuDropDown();
-
         }
 
 
@@ -77,8 +89,8 @@ namespace AssetManagement.Test.UserManagementTest
             Account account = AccountData[accountKey];
 
             ExtentReportHelper.LogTestStep("Go to Login page");
-            //DriverHelper.NavigateTo(login_url);
-            DriverHelper.NavigateTo(login_url_dev);
+            DriverHelper.NavigateTo(login_url);
+            //DriverHelper.NavigateTo(login_url_dev);
 
             ExtentReportHelper.LogTestStep("Enter account with missing username or password");
             _loginPage.Login(account.username, account.password);
@@ -96,8 +108,8 @@ namespace AssetManagement.Test.UserManagementTest
             Account account = AccountData[accountKey];
 
             ExtentReportHelper.LogTestStep("Go to Login page");
-            //DriverHelper.NavigateTo(login_url);
-            DriverHelper.NavigateTo(login_url_dev);
+            DriverHelper.NavigateTo(login_url);
+            //DriverHelper.NavigateTo(login_url_dev);
 
             ExtentReportHelper.LogTestStep("Enter account with invalid username or password");
             _loginPage.Login(account.username, account.password);

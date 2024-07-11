@@ -29,7 +29,7 @@ namespace AssetManagement.Test.EditTest
 
 
         [Test, Description("Edit Staff ")]
-        [TestCase("admin_account_dev", "edit_usercode")]
+        [TestCase("admin_account", "edit_usercode")]
         public void TC1_EditStaffSuccessfully(string accountKey, string staffKey)
         {
             Account account = AccountData[accountKey];
@@ -37,7 +37,9 @@ namespace AssetManagement.Test.EditTest
             StaffEdit staffEdit = StaffEditData[staffKey];
 
             ExtentReportHelper.LogTestStep("Go to Login page");
-            DriverHelper.NavigateTo(login_url_dev);
+            //DriverHelper.NavigateTo(login_url_dev);
+            DriverHelper.NavigateTo(login_url);
+
 
             ExtentReportHelper.LogTestStep("Enter valid account");
             _loginPage.Login(account.username, account.password);

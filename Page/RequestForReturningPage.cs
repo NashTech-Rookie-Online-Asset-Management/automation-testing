@@ -32,6 +32,8 @@ namespace AssetManagement.Page
             _btnState.ClickOnElement();
             _dllState(state).ClickOnElement();
             _btnState.ClickOnElement();
+            DriverHelper.Wait(3000);
+
             _svgOpenMenu.ClickOnElement();
             _ddlCompleteRequest.ClickOnElement();
             _btnAccept.ClickOnElement();

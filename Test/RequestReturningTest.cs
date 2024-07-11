@@ -29,14 +29,16 @@ namespace AssetManagement.Test
         }
 
         [Test, Description("Admin complete returning request")]
-        [TestCase("admin_account_dev","MO000027","Waiting for returning")]
+        //[TestCase("admin_account_dev", "LP000049", "Waiting for returning")]
+        [TestCase("admin_account", "KB000002", "Waiting for returning")]
+
         public void TC1_AdminCompleteReturningRequest(string accountKey, string codeSearch, string state)
         {
             Account account = AccountData[accountKey];
 
             ExtentReportHelper.LogTestStep("Go to Login page");
-            DriverHelper.NavigateTo(login_url_dev);
-            //DriverHelper.NavigateTo(login_url);
+            //DriverHelper.NavigateTo(login_url_dev);
+            DriverHelper.NavigateTo(login_url);
 
             ExtentReportHelper.LogTestStep("Enter valid account");
             _loginPage.Login(account.username, account.password);
@@ -53,15 +55,17 @@ namespace AssetManagement.Test
 
 
         [Test, Description("Admin cancel returning request")]
-        [TestCase("admin_account_dev", "LP000049", "Waiting for returning")]
+        //[TestCase("admin_account_dev", "LP000049", "Waiting for returning")]
+        [TestCase("admin_account", "KB000005", "Waiting for returning")]
+
 
         public void TC2_AdminCancelReturningRequestd(string accountKey, string codeSearch, string state)
         {
             Account account = AccountData[accountKey];
 
             ExtentReportHelper.LogTestStep("Go to Login page");
-            DriverHelper.NavigateTo(login_url_dev);
-            //DriverHelper.NavigateTo(login_url);
+            //DriverHelper.NavigateTo(login_url_dev);
+            DriverHelper.NavigateTo(login_url);
 
             ExtentReportHelper.LogTestStep("Enter valid account");
             _loginPage.Login(account.username, account.password);
