@@ -26,7 +26,7 @@ namespace AssetManagement.Test.CreateTest
 
         [Test, Description("Users Create Request successfully")]
         //[TestCase("test_account_dev", "LP000034", "Waiting for returning")]
-        [TestCase("test_account", "KB000004", "Waiting for returning")]
+        [TestCase("test_account", "KB000010", "Waiting for returning")]
 
         //[TestCase("admin_account_dev2", "LP000049", "Waiting for returning")]
 

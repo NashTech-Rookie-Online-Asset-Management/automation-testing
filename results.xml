@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testsuites time="183.752" tests="16" failures="0">
+  <testsuite id="0" name="AssetManagement.dll" tests="16" failures="0" time="183.752">
+    <testcase classname="AssetManagement.Test.CreateTest.CreateAssetTest" name="TC1_CreateAssetSuccessfully(&quot;admin_account&quot;,&quot;create_asset3&quot;)" time="19.5316980" />
+    <testcase classname="AssetManagement.Test.CreateTest.CreateAssignmenTest" name="TC1_CreateAssignmenttSuccessfully(&quot;admin_account&quot;,&quot;create_assignment3&quot;)" time="14.3166030" />
+    <testcase classname="AssetManagement.Test.CreateTest.CreateRequestTest" name="TC1_CreateRequestSuccessfully(&quot;test_account&quot;,&quot;KB000001&quot;,&quot;Waiting for returning&quot;)" time="8.7238820" />
+    <testcase classname="AssetManagement.Test.CreateTest.CreateUserTest" name="TC2_CreateUserSuccessfully(&quot;admin_account&quot;)" time="16.8852860" />
+    <testcase classname="AssetManagement.Test.CreateTest.USFlowTest" name="TC_USFLowTest(&quot;admin_account&quot;,&quot;LP000028&quot;,&quot;Waiting for returning&quot;,&quot;create_assignment2&quot;,&quot;test_account&quot;)" time="34.5598770" />
+    <testcase classname="AssetManagement.Test.EditTest.EditAssetTest" name="TC1_EditAssetSuccessfully(&quot;admin_account&quot;,&quot;edit_assetcode&quot;)" time="17.1004640" />
+    <testcase classname="AssetManagement.Test.EditTest.EditStaffTest" name="TC1_EditStaffSuccessfully(&quot;admin_account&quot;,&quot;edit_usercode&quot;)" time="12.2388840" />
+    <testcase classname="AssetManagement.Test.RequestReturningTest" name="TC1_AdminCompleteReturningRequest(&quot;admin_account&quot;,&quot;KB000002&quot;,&quot;Waiting for returning&quot;)" time="9.8117050" />
+    <testcase classname="AssetManagement.Test.RequestReturningTest" name="TC2_AdminCancelReturningRequestd(&quot;admin_account&quot;,&quot;KB000005&quot;,&quot;Waiting for returning&quot;)" time="10.4675340" />
+    <testcase classname="AssetManagement.Test.UserManagementTest.ChangePasswordTest" name="TC1_ChangePasswordStaff(&quot;valid_account_dev&quot;)" time="13.0103670" />
+    <testcase classname="AssetManagement.Test.UserManagementTest.LoginTest" name="TC1_LoginSucceced(&quot;valid_account_dev_TC01&quot;)" time="4.1340980" />
+    <testcase classname="AssetManagement.Test.UserManagementTest.LoginTest" name="TC2_LoginSucceced(&quot;valid_account&quot;)" time="8.8276000" />
+    <testcase classname="AssetManagement.Test.UserManagementTest.LoginTest" name="TC3_LoginFailed(&quot;invalid_accountTC03_1&quot;)" time="2.7218540" />
+    <testcase classname="AssetManagement.Test.UserManagementTest.LoginTest" name="TC3_LoginFailed(&quot;invalid_accountTC03_2&quot;)" time="2.6280960" />
+    <testcase classname="AssetManagement.Test.UserManagementTest.LoginTest" name="TC4_LoginFailed(&quot;invalid_accountTC04&quot;)" time="2.8995110" />
+    <testcase classname="AssetManagement.Test.UserManagementTest.LogoutTest" name="TC_LogouSucceced(&quot;admin_account&quot;)" time="5.8940490" />
+  </testsuite>
+</testsuites>
